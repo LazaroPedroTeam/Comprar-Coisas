@@ -1,0 +1,137 @@
+body{
+    background: black;
+}
+#header{
+    background: var(--cor-principal);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 5vw;
+
+}
+#logo{
+    height: 8vh;
+}
+.pesquisa{
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.lupa{
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    padding-right: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+}
+.barra-pesquisa{
+    flex: 1;
+    outline: none; 
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    border: none;
+}
+
+ul li{
+    list-style: none;
+}
+.padrao{
+    display: flex;
+    align-items: end;
+    padding: 5px 20px;
+    gap: 20px;
+    border: #ffffff 1px solid;
+    font-family: var(--fonte-categorias);
+    border-radius: 20px;
+    color: #ffffff;
+  
+   } 
+
+.padrao img{
+    height: 20px;
+    width: 20px;
+    transition: transform 0.5s;
+}
+
+.menu-dropdown{
+    position: relative;
+    
+}
+
+.dropdown{
+   
+    opacity: 0;
+  position: absolute;  
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition:  opacity 0.5s;
+}
+#header>ul:hover .dropdown{
+    display: block;
+    opacity: 1;
+   
+}
+#header>ul:hover .padrao{
+    background: var(--cor-secundaria);
+    border-radius:  20px 20px 0 0;
+    transition: 0.5s;
+}
+#header>ul:hover .padrao img{
+    transform: rotate(180deg);
+ 
+}
+.dropdown a{
+    padding:  5px 5px 5px 20px;
+    color: #ffffff;
+    white-space: nowrap;
+    display: flex;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--branco);
+    font-family: 'Rowdies-light';
+  
+
+}
+.hard-ware a {
+    border-radius:  0 0 20px 20px;
+}
+.icon-perfil, .icon-carrinho{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 5px;
+    border-radius: 20px;
+    background: var(--branco);
+    font-family: var(--fonte-categorias);
+    color: var(--preto);
+    font-size: 16px;
+}
+.icon-perfil img, .icon-carrinho img{
+    height: 20px;
+    width: 20px;
+}
+.icon-carrinho{
+    position: relative;
+    border-radius: 50%;
+}
+.icon-carrinho p{
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    width: 20px;
+    text-align: center;
+    background: #FF630B;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+}
+div{
+    display: flex;
+    gap: 50px;
+}

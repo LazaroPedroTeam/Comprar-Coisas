@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="/styles/pages/formulario-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">CC</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar">
+                <button><img src="search-icon.png" alt="Pesquisar"></button>
+            </div>
+            <div class="menu">
+                <button class="dropdown">Categorias &#9662;</button>
+                <button class="account">
+                    <img src="user-icon.png" alt="Minha Conta">
+                    Minha Conta
+                </button>
+                <button class="cart">
+                    <img src="cart-icon.png" alt="Carrinho">
+                    <span class="cart-count">1</span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <h2>Informações para Cadastro de Produtos</h2>
+            <form id="product-form">
+                <label for="product-image">Imagens do produto:</label>
+                <div class="image-upload">
+                    <input type="file" id="product-image" name="product-image" accept="image/*">
+                    <img src="placeholder-image.png" alt="Imagem do produto" id="image-preview">
+                </div>
+
+                <label for="product-name">Nome do produto:</label>
+                <input type="text" id="product-name" name="product-name" required>
+
+                <label for="brand-name">Nome da Marca:</label>
+                <input type="text" id="brand-name" name="brand-name" required>
+
+                <label for="category">Categoria:</label>
+                <select id="category" name="category" required>
+                    <option value="">Categorias</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="moveis">Móveis</option>
+                    <option value="roupas">Roupas</option>
+                    <!-- Adicionar mais categorias aqui -->
+                </select>
+
+                <label for="description">Descrição do produto:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="price">Preço:</label>
+                <input type="text" id="price" name="price" required>
+
+                <label for="cep">Localização de envio (CEP):</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="contact-phone">Telefone para contato:</label>
+                <input type="tel" id="contact-phone" name="contact-phone" required>
+
+                <label for="contact-email">E-mail para contato:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="cpf-cnpj">CPF ou CNPJ:</label>
+                <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
+
+                <button type="submit" class="submit-btn">Adicionar Produto +</button>
+
+                <label class="terms">
+                    <input type="checkbox" id="terms" required>
+                    Eu aceito os termos e condições do site e autorizo o uso dos meus dados pessoais e dos meus cartões para qualquer fim
+                </label>
+            </form>
+
+            <div class="alert">
+                <strong>Atenção:</strong>
+                <ul>
+                    <li>O prazo de cadastro e aprovação do produto é de até 5 dias úteis.</li>
+                    <li>Preencha todos os campos obrigatórios com informações precisas.</li>
+                    <li>Não nos responsabilizamos por informações incorretas.</li>
+                    <li>Verifique as condições de venda do produto.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="/scripts/page/formulario-script.js"></script>
+</body>
+</html>
