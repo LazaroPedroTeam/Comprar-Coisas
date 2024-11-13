@@ -14,6 +14,10 @@ body{
 }
 #logo{
     height: 8vh;
+    border-radius: 15px;
+}
+#logo:hover{
+    background-color: var(--cor-secundaria);
 }
 .pesquisa{
     border-radius: 20px;
