@@ -1,30 +1,40 @@
 @font-face {
     font-family: 'Roboto';
     src:  local(Roboto), url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Rowdies';
     src:  local(Rowdies), url('../fonts/Rowdies/Rowdies-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Irish';
     src:  local(IrishGrover), url('../fonts/Irish_Grover/IrishGrover-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Rowdies-light';
     src:  local(Rowdies), url('../fonts/Rowdies/Rowdies-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
 }
 :root{
     --cor-principal: #7B00E5;
     --cor-secundaria: #BD9CF4;
+    --cor-contraste: #FF630B;
     --branco: #ffffff;
     --preto: #000000;
     
 
 
-    --fonte-texto: 'Roboto', arial, sans-serif;
-    --fonte-titulo: 'Irish', arial;
-    --fonte-categorias: 'Rowdies', arial;
+    --fonte-texto: 'Roboto', 'Arial', sans-serif;
+    --fonte-titulo: 'Irish', 'Arial', sans-serif;
+    --fonte-categorias: 'Rowdies',  'Arial', sans-serif;
+    --fonte-categorias-light: 'Rowdies-light', 'Arial', sans-serif;
 }
 *{
     margin: 0;
@@ -35,8 +45,4 @@
     font-family: var(--fonte-texto), sans-serif;
     font-size: 1.125rem;
 
-}
-
-a{
-    text-decoration: none;
 }
