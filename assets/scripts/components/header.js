@@ -3,9 +3,7 @@ function inserirHeader(){
     let idheader = document.getElementById("header");
 
     idheader.innerHTML= `
-    
-    
-    <a href="/home-page.html">
+    <a href="/index.html">
         <img src="/assets/images/logo/logo.png" alt="Logo da Página" id="logo">
     </a>
 
@@ -24,10 +22,10 @@ function inserirHeader(){
             </p>
             
             <ul class="dropdown">
-                <li><a href="/home-page.html#pcs-notebooks">PCs e Notebooks</a></li>
-                <li><a href="/home-page.html#celulares">Celulares</a></li>
-                <li><a href="/home-page.html#perifericos">Periféricos</a></li>
-                <li class="ultimo-elem"><a href="/home-page.html#hardware">Hardware</a></li>
+                <li><a href="/index.html#pcs-notebooks">PCs e Notebooks</a></li>
+                <li><a href="/index.html#celulares">Celulares</a></li>
+                <li><a href="/index.html#perifericos">Periféricos</a></li>
+                <li class="ultimo-elem"><a href="/index.html#hardware">Hardware</a></li>
             </ul>
         </li>
     </ul>
