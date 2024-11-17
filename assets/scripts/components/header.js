@@ -8,7 +8,7 @@ function inserirHeader(){
     </a>
 
     <form action="" class="pesquisa">
-        <input class="barra-pesquisa" type="text" placeholder="Pesquisar ...">
+        <input id="barra-pesquisa" type="text" placeholder="Pesquisar ...">
         <button class="lupa" type="submit">
             <img src="/assets/images/icons/lupa-icon.png" alt="Lupa">
         </button>

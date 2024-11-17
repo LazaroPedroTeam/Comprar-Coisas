@@ -7,7 +7,7 @@
     justify-content: space-between;
     position: fixed;
     padding: 0 5vw;
-
+    z-index: 10;
 }
 #logo{
     height: 8vh;
@@ -35,12 +35,13 @@
     align-items: center;
 }
 
-.barra-pesquisa{
+#barra-pesquisa{
     flex: 1;
     outline: none; 
     border-radius: 20px 0 0 20px;
     padding-left: 20px;
     border: none;
+    color: var(--cinza);
 }
 .categorias{
     display: flex;
@@ -51,7 +52,7 @@
     font-family: var(--fonte-categorias);
     border-radius: 20px;
     color: var(--branco);
-    box-shadow: 0 0 px var(--preto);
+    box-shadow: 0 0 5px var(--preto);
    
    } 
 .padrao{
