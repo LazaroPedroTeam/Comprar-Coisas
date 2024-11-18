@@ -6,75 +6,91 @@
     <title>Cadastro de Produtos</title>
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components/header.css">
+    <link rel="stylesheet" href="/assets/styles/pages/formulario-style.css">
 
 </head>
 
 <body>
-    <div class="container">
         <header id="header">
 
         </header>
-        <main>
-            <h2>Informações para Cadastro de Produtos</h2>
-            <form id="product-form">
-                <label for="product-image">Imagens do produto:</label>
-                <div class="image-upload">
-                    <input type="file" id="product-image" name="product-image" accept="image/*">
-                    <img src="placeholder-image.png" alt="Imagem do produto" id="image-preview">
-                </div>
-
-                <label for="product-name">Nome do produto:</label>
-                <input type="text" id="product-name" name="product-name" required>
-
-                <label for="brand-name">Nome da Marca:</label>
-                <input type="text" id="brand-name" name="brand-name" required>
-
-                <label for="category">Categoria:</label>
-                <select id="category" name="category" required>
-                    <option value="">Categorias</option>
-                    <option value="eletronicos">Eletrônicos</option>
-                    <option value="moveis">Móveis</option>
-                    <option value="roupas">Roupas</option>
-                    <!-- Adicionar mais categorias aqui -->
-                </select>
-
-                <label for="description">Descrição do produto:</label>
-                <textarea id="description" name="description" rows="4" required></textarea>
-
-                <label for="price">Preço:</label>
-                <input type="text" id="price" name="price" required>
-
-                <label for="cep">Localização de envio (CEP):</label>
-                <input type="text" id="cep" name="cep" required>
-
-                <label for="contact-phone">Telefone para contato:</label>
-                <input type="tel" id="contact-phone" name="contact-phone" required>
-
-                <label for="contact-email">E-mail para contato:</label>
-                <input type="email" id="contact-email" name="contact-email" required>
-
-                <label for="cpf-cnpj">CPF ou CNPJ:</label>
-                <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
-
-                <button type="submit" class="submit-btn">Adicionar Produto +</button>
-
-                <label class="terms">
-                    <input type="checkbox" id="terms" required>
-                    Eu aceito os termos e condições do site e autorizo o uso dos meus dados pessoais e dos meus cartões para qualquer fim
-                </label>
-            </form>
-
-            <div class="alert">
-                <strong>Atenção:</strong>
-                <ul>
-                    <li>O prazo de cadastro e aprovação do produto é de até 5 dias úteis.</li>
-                    <li>Preencha todos os campos obrigatórios com informações precisas.</li>
-                    <li>Não nos responsabilizamos por informações incorretas.</li>
-                    <li>Verifique as condições de venda do produto.</li>
-                </ul>
+        <div class="formulario">
+            <form action="form">
+                <fieldset>
+                <legend>Cadastro geral</legend>
+                <div class="part1">
+                    <fieldset>
+                        <legend class="titulo-tamanho-h3">Dados pessoais</legend>
+                        <div class="dados-pessoais"> 
+                            <label for="nome">Nome completo</label>
+                            
+                            <input type="text" id="nome" name="Nome" required>
+                            <label for="Profissao">Profissão:</label>
+                            <select id="Profissao" name="profissao">
+                                <option value="">Sua profissão</option>
+                                <option value="desempregado">desempregado</option>
+                                <option value="astronauta">astronauta</option>
+                                <option value="youtuber">youtuber</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                <fieldset>
+                    <legend>Localização</legend>
+                    <div class="localizacao">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                        
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="rua">
+                        
+                    </div>
+                </fieldset>
             </div>
-        </main>
-    </div>
+                <fieldset>
+                    <legend>Faixa etária</legend>
+                    <div class="faixa-etaria">
+                        <div class="coluna">
+                            <label><input type="radio" name="faixa-etaria" value="ate 20 anos">até 20 anos</label>
+                            <label><input type="radio" name="faixa-etaria" value="mais de 20 até 30 anos">mais de 20 até 30 anos</label>
+                            <label><input type="radio" name="faixa-etaria" value="mais de 30 até 40 anos">mais de 30 até 40 anos</label>
+                        </div>
+                        <div class="coluna">
+                            <label><input type="radio" name="faixa-etaria" value="ate 20 anos">mais de 40 até 50 anos</label>
+                            <label><input type="radio" name="faixa-etaria" value="mais de 20 até 30 anos">mais de 50 até 60 anos</label>
+                            <label><input type="radio" name="faixa-etaria" value="mais de 30 até 40 anos">mais de 60</label>
+                        </div>
+                    </fieldset>
+                <fieldset>
+
+                    <legend>Esportes que pratica</legend>
+                    <div class="esportes">
+                        <label><input type="checkbox" name="esportes" value="futebol_campo">Futebol de campo</label>
+                        <label><input type="checkbox" name="esportes" value="futebol_salao">Futebol de salão</label>
+                        <label><input type="checkbox" name="esportes" value="futebol_society">Futebol society</label>
+                        <label><input type="checkbox" name="esportes" value="volei_quadra">Volei de quadra</label>
+                        <label><input type="checkbox" name="esportes" value="volei_praia">Volai de praia</label>
+                        <label><input type="checkbox" name="esportes" value="natacao_piscina">Natação em piscina</label>
+                        <label><input type="checkbox" name="esportes" value="natacao_mar_aberto">Natação em mar aberto</label>
+                    </div>    
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>comentarios</legend>
+
+                <div class="comentarios">
+                    <textarea name="depoimento" id="comentarios" rows="4" placeholder="depoimento"></textarea>
+                    <div class="imagem-com">
+                        <img src="backsus.jpeg" alt="imagem-com" width="100">
+                    </div>
+                </div>
+                <div class="botoes">
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                </div>
+            </fieldset>
+            </form>
+        </div>
+    
 
     <script src="/scripts/page/formulario-script.js"></script>
     <script src="/assets/scripts/components/header.js"></script>
