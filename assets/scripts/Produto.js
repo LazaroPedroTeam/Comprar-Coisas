@@ -66,3 +66,18 @@ const meuProduto = new Produto(
     SubCategorias.NOTEBOOKS.APPLE  
 );
 meuProduto.exibirInfo();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+    produtos.forEach(produto => {
+        new Produto(
+            produto.titulo,
+            produto.imagem,
+            produto.preco,
+            produto.preco_antigo,
+            produto.descricao,
+            produto.categoria,
+            produto.subcategoria
+        );
+    });
+});

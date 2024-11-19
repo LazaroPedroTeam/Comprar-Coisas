@@ -1,0 +1,57 @@
+.cadastro-produto {
+    padding-top: 25vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.cadastro-produto .cont-formulario {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.cadastro-produto form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.cadastro-produto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.cadastro-produto input, 
+.cadastro-produto textarea, 
+.cadastro-produto select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cadastro-produto button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cadastro-produto button:hover {
+    background-color: #357ae8;
+}
