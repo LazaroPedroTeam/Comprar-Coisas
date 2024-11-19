@@ -63,7 +63,7 @@ class Produto{
 
 const meuProduto = new Produto(
     "MacBook Air 13\" (M1)",
-    "/assets/images/imagens-dos-produtos/macbook.png",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
     5400.99,
     6111.10,
     "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
