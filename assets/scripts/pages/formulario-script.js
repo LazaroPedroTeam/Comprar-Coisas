@@ -53,7 +53,7 @@ document.getElementById('categoria').addEventListener('change', function () {
         });
     }
 });
-
+ 
 document.getElementById('formulario').addEventListener('submit', function (envioProd) {
     envioProd.preventDefault();
 

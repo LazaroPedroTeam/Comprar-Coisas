@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
     produtos.forEach(produto => {
         new Produto(
+            produto.id,
             produto.titulo,
             produto.imagem,
             produto.preco,
@@ -81,3 +82,37 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     });
 });
+const meuProduto0 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);const meuProduto1 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);const meuProduto2 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);
+const meuProduto3 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);
