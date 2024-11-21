@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Coisas</title>
+    <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components/header.css">
 
     <title></title>
 </head>
 <script></script>
+
 <body>
-    <header id="header"></header>
+    <header id="header">
+    </header>
+    <hr class="linha_superior">
+    <main>
+        <div class="carrinho_nome">
+            <h1>Carrinho</h1>
+            <img src="carrinho" alt="icone do carrinho">
+    
+        </div>
+        <div class="numeros_finalizacao_compra">
+            <div class="etapa concluida">1</div>
+            <div class="linha concluida"></div>
+            <div class="etapa ">2</div>
+            <div class="linha "></div>
+            <div class="etapa ">3</div>
+            <div class="linha "></div>
+            <div class="etapa ">4</div>
+            <div class="linha "></div>
+        </div>
+        <div class="item_carrinho">
+            <img src="notebook.jpg" alt="notebook" class="imagem_produto">
+            <div class="detalhes_produto">
+                <h2>Apple notebook</h2>
+                <p>R$5.400,99</p>
+                <div class="quantidade">
+                    <button type="button" class="quantidade_bnt">-</button>
+                    <span>1</span>
+                    <button type="button" class="quantidade_bnt">+</button>
+                    <button type="button" class="remove_bnt">Remover</button>
+                </div>
+            </div>
+        </div>
+        <hr class="linha inferior">
+        <p>Preencher o campo CEP para calcular o valor do frete.</p>
+    </main>
+
+    <footer>
+        <label for="cep">Digite o CEP</label>
+        <input type="text" id="cep" placeholder="EX: 01001000" maxlength="8">
+        
+    </footer>
 </body>
 <script src="/assets/scripts/components/header.js"></script>
+
 </html>
