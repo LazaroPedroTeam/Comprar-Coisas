@@ -18,30 +18,20 @@
 #logo:hover{
     background-color: var(--cor-secundaria);
 }
-.pesquisa{
-    border-radius: 20px;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-
-}
-.lupa{
-    border: none;
-    background: var(--branco);
-    cursor: pointer;
-    padding-right: 10px;
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    align-items: center;
-}
-
 #barra-pesquisa{
-    flex: 1;
+    width: 500px;
+    border-radius: 20px;
     outline: none; 
-    border-radius: 20px 0 0 20px;
-    padding-left: 20px;
+    padding: 10px 20px;
+    padding-right: 50px;
     border: none;
     color: var(--cinza);
+    background-color: var(--branco);
+    background-size: 30px;
+    background-image: url('/assets/images/icons/lupa-icon.png');
+    background-repeat: no-repeat; 
+    background-position: right 10px center; 
+  
 }
 .categorias{
     display: flex;
@@ -65,7 +55,7 @@
 .padrao img{
     height: 20px;
     width: 20px;
-    transition: transform 0.5s;
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -85,7 +75,7 @@
 #header>ul:hover .categorias{
     background: var(--cor-secundaria);
     border-radius:  20px 20px 0 0;
-    transition: 0.2s;
+
 }
 #header>ul:hover .padrao img{
     transform: rotate(180deg);
