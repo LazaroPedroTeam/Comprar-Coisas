@@ -10,18 +10,51 @@
     <link rel="stylesheet" href="/assets/styles/pages/formulario-style.css">
 
 </head>
-
+        
 <body>
         <header id="header">
 
         </header>
-        <div class="formulario">
-            
-            </form>
-        </div>
-    
-
-    <script src="/scripts/page/formulario-script.js"></script>
+            <div class="cadastro-produto">
+                <div class="cont-formulario">
+                    <form id="formulario">
+                        <h1>Cadastro de Produto</h1>
+                        
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Título do produto" required>
+                        
+                        <label for="imagem">Imagem</label>
+                        <input type="text" id="imagem" name="imagem" placeholder="URL da imagem"  required>
+                        
+                        <label for="preco">Preço</label>
+                        <input type="number" id="preco" name="preco" placeholder="Preço atual" step="0.01" required>
+                        
+                        <label for="preco-antigo">Preço Antigo</label>
+                        <input type="number" id="preco-antigo" name="preco-antigo" placeholder="Preço anterior" step="0.01">
+                        
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descrição do produto" required></textarea>
+                        
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="NOTEBOOKS">PCs e Notebooks</option>
+                            <option value="CELULARES">Celulares</option>
+                            <option value="TV_MONITOR">TVs e Monitores</option>
+                            <option value="PERIFERICOS">Periféricos</option>
+                            <option value="HARDWARE">Hardware</option>
+                        </select>
+                        
+                        <label for="subcategoria">Subcategoria</label>
+                        <select id="subcategoria" name="subcategoria" required>
+                            <option value="">Selecione uma subcategoria</option>
+                        </select>
+                        
+                        <button type="submit">Cadastrar Produto</button>
+                    </form>
+                </div>
+            </div>
+    <script src="/assets/scripts/pages/formulario-script.js"></script>
     <script src="/assets/scripts/components/header.js"></script>
     
 </body>
