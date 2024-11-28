@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
     produtos.forEach(produto => {
         new Produto(
-            produto.id,
             produto.titulo,
             produto.imagem,
             produto.preco,

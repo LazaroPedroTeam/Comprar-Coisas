@@ -8,10 +8,35 @@
     <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components/header.css">
+    <link rel="stylesheet" href="/assets/styles/pages/login-page.css">
 </head>
-<script></script>
 <body>
-    <header id="header"></header>
+    <header id="header"></header>   
+    <div class="separador">
+
+        <div class="login-container">
+            <h1>BEM VINDO DE VOLTA!</h1>
+            <form class="login-form">
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit" class="btn-entrar" disabled>Entrar</button>
+                <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+            </form>
+            
+            </div>
+            <div class="social-login">
+                <H1>FAÇA LOGIN COM SUA REDE SOCIAL.</H1>
+                <button class="btn-google">Entrar com Google</button>
+                <button class="btn-facebook">Entrar com Facebook</button>
+                <button class="btn-X">Entrar com X(Twitter)</button>
+                <div class="signup-link">
+                    <br>
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+        
 </body>
+<script src="/assets/scripts/pages/login-script.js"></script>
 <script src="/assets/scripts/components/header.js"></script>
 </html>
