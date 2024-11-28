@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 const meuProduto0 = new Produto(
-    "MacBook Air 13\" (M1)",
+    "wndowsr 13\" (M1)",
     "/assets/images/imagens-dos-produtos/notebook-generico.png",
     5400.99,
     6111.10,
@@ -90,7 +90,7 @@ const meuProduto0 = new Produto(
     Categorias.NOTEBOOKS, 
     SubCategorias.NOTEBOOKS.APPLE  
 );const meuProduto1 = new Produto(
-    "MacBook Air 13\" (M1)",
+    "MacBok Air 13\" (M1)",
     "/assets/images/imagens-dos-produtos/notebook-generico.png",
     5400.99,
     6111.10,

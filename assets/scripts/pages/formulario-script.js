@@ -37,7 +37,7 @@ const subcategories = {
         PECAS_E_ACESSORIOS: 'Peças e acessórios'
     }
 };
-
+ 
 document.getElementById('categoria').addEventListener('change', function () {
     const subcategoria = document.getElementById('subcategoria');
     const categoria = this.value;
