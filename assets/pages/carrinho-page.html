@@ -4,29 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar Coisas</title>
+    <title>Carrinho de compras</title>
     <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components/header.css">
-
-    <title></title>
+    <link rel="stylesheet" href="/assets/styles/pages/carrinho-style.css">
 </head>
-<script></script>
 
 <body>
     <header id="header">
         
     </header>
-    <hr class="linha_superior">
+<div class="todoconteudo">
     <main>
         <div class="carrinho_nome">
             <h1>Carrinho</h1>
-            <img src="carrinho" alt="icone do carrinho">
-    
+            <img class="img_carrinho" src="/assets/images/icons/carrinho.png" alt="icone do carrinho"  type="image/png">
         </div>
+        <hr class="linha_superior">
         <div class="numeros_finalizacao_compra">
-            <div class="etapa concluida">1</div>
-            <div class="linha concluida"></div>
+            <div class="etapa-concluida"><p>1</p></div>
+            <div class="linha-concluida"></div>
             <div class="etapa ">2</div>
             <div class="linha "></div>
             <div class="etapa ">3</div>
@@ -34,29 +32,48 @@
             <div class="etapa ">4</div>
             <div class="linha "></div>
         </div>
-        <div class="item_carrinho">
-            <img src="macbook.png" alt="notebook" class="imagem_produto">
-            <div class="detalhes_produto">
-                <h2>Apple notebook</h2>
-                <p>R$5.400,99</p>
-                <div class="quantidade">
-                    <button type="button" class="quantidade_bnt">-</button>
-                    <span>1</span>
-                    <button type="button" class="quantidade_bnt">+</button>
-                    <button type="button" class="remove_bnt">Remover</button>
-                </div>
-            </div>
-        </div>
-        <hr class="linha inferior">
-        <p>Preencher o campo CEP para calcular o valor do frete.</p>
-    </main>
+        <div class="produto_carrinho" id="produtoCarrinho">
+            <img src="/assets/images/imagens-dos-produtos/macbook.png" alt="notebook" class="imagem_produto">
 
+            <h2 class="nome-produto">Apple notebook</h2>
+
+
+            
+            <div class="detalhes_produto">
+                
+                
+                <div class="quantidade">
+                    <div class="var-butao">
+                    <button type="button" class="quantidade_bntA" id="btnDiminuir">-</button>
+                    <span>1</span>
+                    <button type="button" class="quantidade_bntD" id="btnAumentar">+</button>
+                </div>
+
+                    <div class="var-remover">
+                    <button type="button" class="remove_bnt" id="btnRemover">Remover</button>
+                    <img src="/assets/images/icons/Lixeiro.png" alt="lixeiro" class="img_lixeiro">
+                </div>
+                </div>
+
+
+            </div>
+
+            <p class="preco-produto" id="precoProduto" >R$5.400,99</p>
+        </div>
+        <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto</button>
+       
+        <hr class="linha-inferior">
+       
+        <p class="paragrafo-cep" >Preencher o campo CEP para calcular o valor do frete.</p>
+        <label class="label-cep" for="cep">Informe seu CEP</label>
+        <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8">
+    </main>
+</div>
     <footer>
-        <label for="cep">Digite o CEP</label>
-        <input type="text" id="cep" placeholder="EX: 01001000" maxlength="8">
-        
+        <button class="btn-finalizarCompra" id="finalizarCompra">Finalizar compra</button>
+        <div id="conteiner-pagamento"></div>
     </footer>
 </body>
 <script src="/assets/scripts/components/header.js"></script>
-
+<script src="/assets/scripts/pages/carrinho-script.js"></script>
 </html>
