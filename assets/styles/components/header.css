@@ -38,7 +38,7 @@
     align-items: end;
     padding: 5px 20px;
     gap: 20px;
-    border: var(--branco) 1px solid;
+    border: var(--branco) 2px solid;
     font-family: var(--fonte-categorias);
     border-radius: 20px;
     color: var(--branco);
@@ -92,7 +92,7 @@
   
 
 }
-.ultimo-elem a {
+.ultimo-elem a{
     border-radius:  0 0 20px 20px;
 }
 .icon-perfil, .icon-carrinho{

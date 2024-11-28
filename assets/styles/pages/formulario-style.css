@@ -1,10 +1,8 @@
 .cadastro-produto {
-    padding-top: 25vh;
-    font-family: Arial, sans-serif;
+    padding-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f5f5f5;
 }
 
