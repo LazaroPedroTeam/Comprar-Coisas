@@ -13,7 +13,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--preto);
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
 }
 
 .cadastro-produto form h1 {
