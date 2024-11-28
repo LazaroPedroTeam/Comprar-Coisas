@@ -8,15 +8,19 @@
     <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/components/header.css">
-
+    <link rel="stylesheet" href="/assets/styles/pages/perfil-style.css">
 </head>
 <script></script>
 
 <body>
     <header id="header"></header>
-    <aside>
-        <img src="perfil-page.html" alt="Foto de Perfil">
+   
+   <main> 
+    <aside class="barra-lateral">
+        <img src="/assets/images/icons/perfil-icon.png" alt="Foto de Perfil">
         <p>Minha Conta</p>
+        <br>
+        <p>Informações Pessoais</p>
         <br>
         <p>Meus Pedidos</p>
         <br>
@@ -28,14 +32,14 @@
         <br>
         <p>Configurações</p>
     </aside>
-    <div> <!-- parte central da page -->
+    <div class="corpo"> <!-- parte central da page -->
         <div> <!-- parte do topo com foto e tals-->
-            <img src="perfil-page.html" alt="Foto de Perfil">
+            <img src="/assets/images/icons/perfil-icon.png" alt="Foto de Perfil">
             <p>Ola Usuario!</p>
             <p>Bem Vindo Novamente</p>
         </div>
-        <h2>Informações Pessoais</h2>
-        <div>
+        <h2 class="subtitulo">Informações Pessoais</h2>
+        <div class="informaçoes">
             <p>Nome:</p>
             <p>Usuario da silva</p>
             <br>
@@ -45,10 +49,10 @@
             <p>Telefone:</p>
             <p>+55 77 9 998-7766</p>
         </div>
-        <h2>Meus Pedidos</h2>
-        <button>Comprar Produto +</button>
-        <h2>Endereço de Entrega</h2>
-        <div>
+        <h2 class="subtitulo">Meus Pedidos</h2>
+        <button class="botao">Comprar Produto +</button>
+        <h2 class="subtitulo">Endereço de Entrega</h2>
+        <div class="informaçoes">
             <p>Rua:</p>
             <p>Rua da silva</p>
             <br>
@@ -62,9 +66,9 @@
                 <p>12345-000</p>
             </div>
         </div>
-        <button>Adicionar Endereço +</button>
-        <h2>Pagamento</h2>
-        <div>
+        <button class="botao">Adicionar Endereço +</button>
+        <h2 class="subtitulo">Pagamento</h2>
+        <div class="informaçoes">
             <p>Número do Cartão:</p>
             <p>4024 0071 1322 1930</p>
             <br>
@@ -77,21 +81,22 @@
                 <p>Codigo de Segurança (CVV):</p>
                 <p>925</p>
             </div>
-            <button>Adicionar Cartão +</button>
+            <button class="botao">Adicionar Cartão +</button>
         </div>
-        <h2>Configurações</h2>
+        <h2 class="subtitulo">Configurações</h2>
         <div>
-            <button>Alterar imagem +</button>
+            <button class="botao">Alterar imagem +</button>
             <br>
-            <button>Alterar Nome +</button>
+            <button class="botao">Alterar Nome +</button>
             <div>
-                <button>Alterar Telefone +</button> 
+                <button class="botao">Alterar Telefone +</button>
                 <br>
-                <button>Alterar Email +</button>
+                <button class="botao">Alterar Email +</button>
             </div>
         </div>
 
     </div>
+</main>
 </body>
 <script src="/assets/scripts/components/header.js"></script>
 
