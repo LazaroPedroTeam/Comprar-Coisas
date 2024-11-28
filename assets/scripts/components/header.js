@@ -1,5 +1,5 @@
 
-function inserirHeader(){
+
     let idheader = document.getElementById("header");
 
     idheader.innerHTML= `
@@ -9,9 +9,6 @@ function inserirHeader(){
 
         <form action="" class="pesquisa">
             <input id="barra-pesquisa" type="text" placeholder="Pesquisar ...">
-            <button class="lupa" type="submit">
-                <img src="/assets/images/icons/lupa-icon.png" alt="Lupa">
-            </button>
         </form>
 
         <ul>
@@ -44,6 +41,29 @@ function inserirHeader(){
     `;
 
 
-}
 
-window.onload = inserirHeader;
+
+
+
+
+const barrainput = document.getElementById('barra-pesquisa');
+barrainput.addEventListener('input', function(event) {
+    const campo_pesquisa = formatarTexto(event.target.value);
+    let produtos = document.getElementsByClassName('produto');
+    for (let i = 0; i < produtos.length; i++) {
+        let produto = produtos[i];
+        let titulo = formatarTexto(produto.querySelector('.titulo-produto').innerText);
+        if(titulo.indexOf(campo_pesquisa) !== -1){
+            produto.style.display = 'flex';
+        } else{
+            produto.style.display = 'none';
+        }
+
+       
+      }
+
+});
+
+function formatarTexto(valor){
+return valor.toUpperCase().trim();
+}

@@ -1,10 +1,8 @@
 .cadastro-produto {
-    padding-top: 25vh;
-    font-family: Arial, sans-serif;
+    padding-top: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f5f5f5;
 }
 
@@ -12,7 +10,7 @@
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--preto);
     width: 100%;
     max-width: 400px;
 }
@@ -43,8 +41,8 @@
 .cadastro-produto button {
     width: 100%;
     padding: 10px;
-    background-color: #4285f4;
-    color: white;
+    background-color: var(--cor-principal);
+    color: var(--branco);
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -53,5 +51,5 @@
 }
 
 .cadastro-produto button:hover {
-    background-color: #357ae8;
+    background-color: var(--cor-principal);
 }
