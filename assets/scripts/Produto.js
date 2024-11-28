@@ -21,28 +21,23 @@ class Produto{
         let ulProduto = document.createElement("ul");
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
-                <a href="/assets/pages/produto-page.html">
-                    <li class="imagem-produto">
-        <img src="${this.imagem}" alt="Imagem do ${this.titulo}">
-    </li>
-    <li class="texto-produto">
-            <div class="preco-produto">
-                <p class="preco-novo" title="${this.preco}" >${this.preco}</p>
-                <p class="preco-antigo" title="${this.preco_antigo}" >${this.preco_antigo} </p>
-                
-            </div>
-            <div class="titulo-produto" title="${this.titulo}">
-                ${this.titulo}
-            </div>
-            <div class="descricao-produto" title="${this.descricao}">
-                <p>${this.descricao}</p>
-                
-            </div>
-            
-    </li>
-                </a>
-  
-        
+            <a href="/assets/pages/produto-page.html">
+                <li class="imagem-produto">
+                    <img src="${this.imagem}" alt="Imagem do ${this.titulo}">
+                </li>
+                <li class="texto-produto">
+                    <div class="preco-produto">
+                        <p class="preco-novo" title="${this.preco}" >${this.preco}</p>
+                        <p class="preco-antigo" title="${this.preco_antigo}" >${this.preco_antigo} </p>
+                    </div>
+                    <div class="titulo-produto" title="${this.titulo}">
+                        ${this.titulo}
+                    </div>
+                    <div class="descricao-produto" title="${this.descricao}">
+                        <p>${this.descricao}</p>
+                    </div>
+                </li>
+            </a>
         `;
         campo.appendChild(ulProduto);
     }
@@ -86,3 +81,37 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     });
 });
+const meuProduto0 = new Produto(
+    "wndowsr 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);const meuProduto1 = new Produto(
+    "MacBok Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);const meuProduto2 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);
+const meuProduto3 = new Produto(
+    "MacBook Air 13\" (M1)",
+    "/assets/images/imagens-dos-produtos/notebook-generico.png",
+    5400.99,
+    6111.10,
+    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.APPLE  
+);
