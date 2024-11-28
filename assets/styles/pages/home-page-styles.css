@@ -1,6 +1,8 @@
 main{
-
-    padding: 10vh 5vw 0 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 15vh 5vw 0 5vw;
 }
 #container-produtos{
     display: grid;
@@ -66,20 +68,75 @@ main{
 
 
 /*-- Css das categorias --*/
-#categorias-produto ul{
+#categorias-produtos .categorias-seletor{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
-.seletor{
-    display: inline-flex;
+.seletor p{
+    display: flex;
     align-items: center;
     padding: 5px 20px;
     gap: 20px;
-    border: var(--cor-principal) 1px solid;
+    border: var(--cor-principal) 2px solid;
     font-family: var(--fonte-categorias);
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--cor-principal);
-    box-shadow: 0 0 5px var(--preto);
    
+}
+.seletor{
+    position: relative;
+    cursor: pointer;
+}
+.seletor img{
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.seletor:hover .cat-dropdown{
+    display: block;
+
+}
+.seletor:hover p {
+    border-radius:  10px 10px 0 0;
+    
+}
+.seletor:hover img {
+    transform: rotate(180deg);
+    
+}
+.cat-dropdown{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+
+}
+.cat-dropdown li{
+   
+    padding:  5px 5px 5px 20px;
+    color: var(--cor-principal);
+    white-space: nowrap;
+    display: flex;
+    background: var(--branco);
+    border: 2px solid var(--cor-principal);
+    font-family: var(--fonte-categorias-light);
+    font-size: 1rem;
+}
+.ultimo-elem{
+    border-radius:  0 0 10px 10px;
+}
+.seletor-inicio {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    font-family: var(--fonte-categorias);
+    border-radius: 10px;
+    color: var(--branco);
+    background: var(--cor-principal);
+    cursor: pointer;
+}
+.seletor-inicio:hover{
+    background: var(--cor-secundaria);
+
 }

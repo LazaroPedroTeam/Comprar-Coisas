@@ -13,8 +13,9 @@ const SubCategorias = {
         LENOVO: 'Lenovo',
         ASUS: 'Asus',
         DELL: 'Dell',
-        APPLE: 'Apple',
-        OUTROS: 'Outros'
+        OUTROS: 'Outros',
+        APPLE: 'Apple'
+        
     }),
 
     CELULARES: Object.freeze({
