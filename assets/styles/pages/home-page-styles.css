@@ -2,7 +2,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding: 15vh 5vw 0 5vw;
+    padding: 15vh 0 0 0;
+}
+section{
+    padding: 0 5vw 0 5vw;
 }
 #container-produtos{
     display: grid;
@@ -139,4 +142,20 @@ main{
 .seletor-inicio:hover{
     background: var(--cor-secundaria);
 
+}
+
+
+
+#promocao-banner{
+    background: var(--cor-contraste);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.promocao, .promocao span, #promocao-banner{
+    font-family: var(--fonte-categorias);
+    text-transform: uppercase;
+    color: var(--branco);
+    font-size: 2rem;
 }
