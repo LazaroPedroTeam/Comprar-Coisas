@@ -44,28 +44,9 @@ class Produto{
     autoIncremento(){
         return Produto.contador++;
     }
-    exibirInfo() {
-        console.log(`Título: ${this.titulo}`);
-        console.log(`Imagem: ${this.imagem}`);
-        console.log(`Preço: R$ ${this.preco}`);
-        console.log(`Preço Antigo: R$ ${this.preco_antigo}`);
-        console.log(`Descrição: ${this.descricao}`);
-        console.log(`Categoria: ${this.categoria}`);
-        console.log(`Sub-Categoria: ${this.sub_categoria}`);
-    }
+
 
 }
-
-const meuProduto = new Produto(
-    "MacBook Air 13\" (M1)",
-    "/assets/images/imagens-dos-produtos/notebook-generico.png",
-    5400.99,
-    6111.10,
-    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
-    Categorias.NOTEBOOKS, 
-    SubCategorias.NOTEBOOKS.APPLE  
-);
-meuProduto.exibirInfo();
 
 document.addEventListener('DOMContentLoaded', function () {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
@@ -81,24 +62,53 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     });
 });
-const meuProduto0 = new Produto(
-    "wndowsr 13\" (M1)",
-    "/assets/images/imagens-dos-produtos/notebook-generico.png",
-    5400.99,
-    6111.10,
-    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
+new Produto(
+    "AMD Ryzen 7",
+    "/assets/images/imagens-dos-produtos/processador.png",
+    799.80,
+    1200.88,
+    "Processador AMD Ryzen 7Cachê 4MB, 8 Núcleos, 16 Threads, AM4 - 100-100001503WOF",
+    Categorias.HARDWARE, 
+    SubCategorias.HARDWARE.PROCESSADORES  
+);
+new Produto(
+    "PlayStation 5",
+    "/assets/images/imagens-dos-produtos/ps-5.png",
+    2719.07,
+    4299,
+    "Console Sony PlayStation 5 Slim, Branco + 2 Jogos - 1000038899",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.OUTROS  
+);
+new Produto(
+    "Cadeira Gamer KBM",
+    "/assets/images/imagens-dos-produtos/cadeira.png",
+    759.90,
+    1157.70,
+    "Cadeira Gamer KBM! GAMING Tempest CG600,Pernas Retrátil, Reclinável - KGCG600BR",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.CADEIRAS  
+);
+new Produto(
+    "intel atom d525",
+    "/assets/images/imagens-dos-produtos/placa-mae.png",
+    123.56,
+    234.78,
+    "Intel Atom D525 02 cores e 04 threads, D525 3.0, memória DDRIII 02 GBytes",
+    Categorias.HARDWARE, 
+    SubCategorias.HARDWARE.PLACA_MAE
+);
+new Produto(
+    "Acer Nitro 5",
+    "/assets/images/imagens-dos-produtos/notebook.png",
+    2999.99,
+    4000,
+    "Notebook Gamer Acer Nitro V ANV15-51-54DL Sistema Operacional -: Windows 11 Home CPU e Chipset: Intel Core i5-13420H de 13a geração 8 núcleos",
     Categorias.NOTEBOOKS, 
-    SubCategorias.NOTEBOOKS.APPLE  
-);const meuProduto1 = new Produto(
-    "MacBok Air 13\" (M1)",
-    "/assets/images/imagens-dos-produtos/notebook-generico.png",
-    5400.99,
-    6111.10,
-    "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
-    Categorias.NOTEBOOKS, 
-    SubCategorias.NOTEBOOKS.APPLE  
-);const meuProduto2 = new Produto(
-    "MacBook Air 13\" (M1)",
+    SubCategorias.NOTEBOOKS.ACER 
+);
+new Produto(
+    "Apple Macbook Air",
     "/assets/images/imagens-dos-produtos/notebook-generico.png",
     5400.99,
     6111.10,
@@ -106,12 +116,93 @@ const meuProduto0 = new Produto(
     Categorias.NOTEBOOKS, 
     SubCategorias.NOTEBOOKS.APPLE  
 );
-const meuProduto3 = new Produto(
-    "MacBook Air 13\" (M1)",
+new Produto(
+    "Mouse Gamer",
+    "/assets/images/imagens-dos-produtos/mouse.png",
+    350,
+    555.99,
+    "Mouse Gamer sem fio 6 botões programáveis, Preto - 910-007198",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.MOUSE  
+);
+new Produto(
+    "Monitor Gamer Curvo KBM",
+    "/assets/images/imagens-dos-produtos/monitor.png",
+    1799.99,
+    2066.66,
+    "Monitor Gamer Curvo KBM! GAMIN, Adaptive Sync, Ajuste De Ângulo - KGMG32027PT",
+    Categorias.TV_MONITOR, 
+    SubCategorias.TV_MONITOR.ULTRA_WIDE  
+);
+new Produto(
+    "Cadeira Gamer KBM",
+    "/assets/images/imagens-dos-produtos/cadeira.png",
+    759.90,
+    1157.70,
+    "Cadeira Gamer KBM! GAMING Tempest CG600,Pernas Retrátil, Reclinável - KGCG600BR",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.CADEIRAS  
+);
+new Produto(
+    "PlayStation 5",
+    "/assets/images/imagens-dos-produtos/ps-5.png",
+    2719.07,
+    4299,
+    "Console Sony PlayStation 5 Slim, Branco + 2 Jogos - 1000038899",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.OUTROS  
+);
+new Produto(
+    "Monitor Gamer Curvo KBM",
+    "/assets/images/imagens-dos-produtos/monitor.png",
+    1799.99,
+    2066.66,
+    "Monitor Gamer Curvo KBM! GAMIN, Adaptive Sync, Ajuste De Ângulo - KGMG32027PT",
+    Categorias.TV_MONITOR, 
+    SubCategorias.TV_MONITOR.ULTRA_WIDE  
+);
+new Produto(
+    "intel atom d525",
+    "/assets/images/imagens-dos-produtos/placa-mae.png",
+    123.56,
+    234.78,
+    "Intel Atom D525 02 cores e 04 threads, D525 3.0, memória DDRIII 02 GBytes",
+    Categorias.HARDWARE, 
+    SubCategorias.HARDWARE.PLACA_MAE
+);
+new Produto(
+    "Apple Macbook Air",
     "/assets/images/imagens-dos-produtos/notebook-generico.png",
     5400.99,
     6111.10,
     "Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB RAM, 256 GB) - Cinza espacial",
     Categorias.NOTEBOOKS, 
     SubCategorias.NOTEBOOKS.APPLE  
+);
+new Produto(
+    "Acer Nitro 5",
+    "/assets/images/imagens-dos-produtos/notebook.png",
+    2999.99,
+    4000,
+    "Notebook Gamer Acer Nitro V ANV15-51-54DL Sistema Operacional -: Windows 11 Home CPU e Chipset: Intel Core i5-13420H de 13a geração 8 núcleos",
+    Categorias.NOTEBOOKS, 
+    SubCategorias.NOTEBOOKS.ACER 
+);
+new Produto(
+    "AMD Ryzen 7",
+    "/assets/images/imagens-dos-produtos/processador.png",
+    799.80,
+    1200.88,
+    "Processador AMD Ryzen 7Cachê 4MB, 8 Núcleos, 16 Threads, AM4 - 100-100001503WOF",
+    Categorias.HARDWARE, 
+    SubCategorias.HARDWARE.PROCESSADORES  
+);
+new Produto(
+    "Mouse Gamer",
+    "/assets/images/imagens-dos-produtos/mouse.png",
+    350,
+    555.99,
+    "Mouse Gamer sem fio 6 botões programáveis, Preto - 910-007198",
+    Categorias.PERIFERICOS, 
+    SubCategorias.PERIFERICOS.MOUSE  
 );

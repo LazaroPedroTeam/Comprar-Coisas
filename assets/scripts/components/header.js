@@ -60,7 +60,7 @@ barrainput.addEventListener('input', function(event) {
 function formatarTexto(valor){
 return valor.toUpperCase().trim();
 }
-let tempoRestante = 10;
+let tempoRestante = 10000;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
