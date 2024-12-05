@@ -6,12 +6,11 @@
     const btnX = document.querySelector('.btn-X');
     
     function validaRegex(email) {
-      const emailVerificado = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      return emailVerificado.test(email);
+      const emailVerificador = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return emailVerificador.test(email);
     }
   
     function confereBotao() {
-      const email = emailConfirir.value.trim();
       const senhaSus = senha.value.trim();
   
       if (validaRegex(email) && senhaSus) {

@@ -2,32 +2,29 @@
 .container {
     text-align: center;
     background-color: var(--branco);
-    padding: 20px;
-    width: 100%;
+    width: 90%;
     padding-top: 15vh;
     margin: auto;
+    padding: 5%;
+    border-radius: 30px;
+    box-shadow: 0 40px 180px var(--cinza);
 }
 
 .logo h1 {
-    color: #1877f2;
+    color: var(--cor-principal);
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .form-container h2 {
-    font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--cor-secundaria);
 }
 
 .form-container p {
-    color: #606770;
+    color: var(--preto);
     font-size: 14px;
     margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
 }
 
 .container input[type="text"],
@@ -36,64 +33,53 @@
 select {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccd0d5;
-    border-radius: 4px;
+    margin: 5px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 30px;
     font-size: 14px;
-    box-sizing: border-box;
 }
 
-.birth-date {
-    display: flex;
-    justify-content: space-between;
+input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+    background-color: var(--branco);
+    border-radius: 30px;
 }
 
-.birth-date select {
-    width: 32%;
-}
-
-.gender {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
 
 button {
     width: 100%;
-    background-color: #42b72a;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--branco);
     padding: 10px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 30px;
     font-size: 16px;
 }
 
 button:hover {
-    background-color: #36a420;
+    background-color: var(--cor-secundaria);
 }
 
-.terms {
-    font-size: 12px;
-    color: #606770;
+.Termos {
+    color: var(--preto);
     margin-top: 20px;
 }
 
-.terms a {
-    color: #1877f2;
+.Termos a {
+    color: var(--cor-principal);
     text-decoration: none;
 }
 
-.terms a:hover {
+.Termos a:hover {
     text-decoration: underline;
 }
 
 .login-link {
-    display: block;
     margin-top: 20px;
     font-size: 14px;
-    color: #1877f2;
-    text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
 .login-link:hover {

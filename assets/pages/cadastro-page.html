@@ -23,44 +23,27 @@
                     <h2>Criar uma nova conta</h2>
                     <p>É rápido e fácil.</p>
                     <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Nome" required>
-                            <input type="text" placeholder="Sobrenome" required>
+                        <div>
+                            <input class="nome" type="text" placeholder="Nome" required>
+                            <input class="sobrenome" type="text" placeholder="Sobrenome" required>
                         </div>
-                        <div class="form-group">
-                            <label>Data de nascimento</label>
-                            <div class="birth-date">
-                                <select required>
-                                    <option>Dia</option>
-                                    <option>1</option>
-                                    <option>5</option>
-                                    <option>10</option>
-                                </select>
-                                <select required>
-                                    <option>Mês</option>
-                                    <option>Jan</option>
-                                    <option>Dez</option>
-                                </select>
-                                <select required>
-                                    <option>Ano</option>
-                                    <option>2024</option>
-                                    <option>2023</option>
-                                </select>
-                            </div>
+                        <div>
+                            <label>Data de nascimento</label><br>
+                            <input class=".data" type="date" required>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label>Gênero</label>
-                            <div class="gender">
-                                <label><input type="radio" name="gender" required> Feminino</label>
-                                <label><input type="radio" name="gender"> Masculino</label>
-                                <label><input type="radio" name="gender"> Personalizado</label>
+                            <div class="genero">
+                                <label><input type="radio" name="genero"> Feminino</label>
+                                <label><input type="radio" name="genero"> Masculino</label>
+                                <label><input type="radio" name="genero"> Personalizado</label>
                             </div>
                         </div>
-                        <input type="email" placeholder="Celular ou email" required>
+                        <input type="email" placeholder="Email" required>
                         <input type="password" placeholder="Nova senha" required>
-                        <button type="submit">Cadastre-se</button>
+                        <button class="btn-cadastro" type="submit" disabled>Cadastre-se</button>
                     </form>
-                    <p class="terms">
+                    <p class="Termos">
                         Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Termos</a>, <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Privacidade</a> e <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Cookies</a>.
                     </p>
                     <a href="/assets/pages/login-page.html" class="login-link">Já tem uma conta?</a>
