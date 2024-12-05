@@ -60,7 +60,10 @@ barrainput.addEventListener('input', function(event) {
 function formatarTexto(valor){
 return valor.toUpperCase().trim();
 }
-let tempoRestante = 10;
+
+
+
+let tempoRestante = 10000;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
@@ -88,4 +91,33 @@ const intervalo = setInterval(function() {
 
     
 
-  }, 1000)
+  }, 1000);
+
+
+
+  let cont_cat = 0;
+  function filtrarCateg(categoria, elemento) {
+    let ativo = document.getElementsByClassName('active-cat');
+    let produtos = document.getElementsByClassName('produto');
+    if (categoria == 0) {
+        for (let i = 0; i < produtos.length; i++) {
+            produtos[i].style.display = 'flex';
+        }
+    } else {
+        for (let i = 0; i < ativo.length; i++) {
+            ativo[i].classList.remove('active-cat');
+        }
+        elemento.classList.add('active-cat');
+        for (let i = 0; i < produtos.length; i++) {
+            let cat_sel = produtos[i].querySelector('.categoria-sel').innerText;
+            if (cat_sel == categoria) {
+                produtos[i].style.display = 'flex'; 
+            } else {
+                produtos[i].style.display = 'none';
+            }
+        }
+    }
+}
+   
+
+  

@@ -1,3 +1,12 @@
+.background {
+    background-image: url("/assets/images/imagens-variadas/fundoSiteDesfoque.png");
+    z-index: -1;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
 * {
     box-sizing: border-box;
 }

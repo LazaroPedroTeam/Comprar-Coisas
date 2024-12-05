@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoa</title>
+    <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/components/header.css">
+    <link rel="stylesheet" href="/assets/styles/pages/cadastro-page.css">
+
+</head>
+        
+<body>
+        <header id="header">
+
+        </header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Compre Coisas</h1>
+                </div>
+                <div class="form-container">
+                    <h2>Criar uma nova conta</h2>
+                    <p>É rápido e fácil.</p>
+                    <form>
+                        <div>
+                            <input class="nome" type="text" placeholder="Nome" required>
+                            <input class="sobrenome" type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div>
+                            <label>Data de nascimento</label><br>
+                            <input class=".data" type="date" required>
+                        </div>
+                        <div>
+                            <label>Gênero</label>
+                            <div class="genero">
+                                <label><input type="radio" name="genero"> Feminino</label>
+                                <label><input type="radio" name="genero"> Masculino</label>
+                                <label><input type="radio" name="genero"> Personalizado</label>
+                            </div>
+                        </div>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Nova senha" required>
+                        <button class="btn-cadastro" type="submit" disabled>Cadastre-se</button>
+                    </form>
+                    <p class="Termos">
+                        Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Termos</a>, <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Privacidade</a> e <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Cookies</a>.
+                    </p>
+                    <a href="/assets/pages/login-page.html" class="login-link">Já tem uma conta?</a>
+                </div>
+            </div>
+        
+    <script src="/assets/scripts/pages/cadastro-script.js"></script>
+    <script src="/assets/scripts/components/header.js"></script>
+    
+</body>
+</html>

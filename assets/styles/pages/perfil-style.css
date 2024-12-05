@@ -1,0 +1,70 @@
+
+
+.barra-lateral {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 270px;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.barra-lateral a {
+  /* pro link ficar clicavel e maiorzin bonitin */
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.barra-lateral a:hover {
+  background-color: #555;
+}
+
+
+.corpo {
+  padding-top: 10vh;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.informaçoes {
+  position: relative;
+  width: 100vw;
+  background-color: #d3bfe88a;
+  background-size: cover;
+  background-position: center;
+  margin-inline: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.subtitulo {
+  position: relative;
+  width: 100vw;
+  background-color: #a877dd8a;
+  background-size: cover;
+  background-position: center;
+  margin-inline: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.botao {
+  background-color: #422151; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+
+}
