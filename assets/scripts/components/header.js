@@ -104,12 +104,9 @@ const intervalo = setInterval(function() {
             produtos[i].style.display = 'flex';
         }
     } else {
-
         for (let i = 0; i < ativo.length; i++) {
             ativo[i].classList.remove('active-cat');
         }
-        
-
         elemento.classList.add('active-cat');
         for (let i = 0; i < produtos.length; i++) {
             let cat_sel = produtos[i].querySelector('.categoria-sel').innerText;
