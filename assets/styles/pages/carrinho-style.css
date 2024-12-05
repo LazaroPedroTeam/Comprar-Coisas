@@ -109,9 +109,9 @@
     }
     
     .linha_superior{
-        height: 20px;
+        height: 15px;
         background-color: var(--cor-principal);
-        border-radius: 6%;
+        border-radius: 3px;
         margin: 0 5px;
 
     }
@@ -179,7 +179,7 @@
 .linha-inferior{
     height: 5px;
     background-color: var(--cor-principal);
-    border-radius: 6%;
+    border-radius: 2px;
     margin: 0 5px;
 }
 
@@ -192,16 +192,15 @@
 
 .input-cep{
  width: 30%;
- height: 15%;
- border: 1px solid var(--cor-secundaria);
+ height: 20%;
+ border: 2px solid var(--cor-secundaria);
 }
 
 .paragrafo-cep{
     margin-top: 30px;
     color: var(--cinza);
     font-size:large;
-    
-    
+
 }
 
 .bnt-restaurarProdut,
@@ -230,4 +229,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-restaurarProduto{
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.container-pagamento{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--cor-principal);
+    font-family: var(--fonte-texto), sans-serif;
+    font-size:large;
+   
+
+}
+
+
+.bntfinalizar{
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 5px;
 }

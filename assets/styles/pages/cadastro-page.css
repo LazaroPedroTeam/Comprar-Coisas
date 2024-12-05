@@ -1,0 +1,88 @@
+
+.container {
+    text-align: center;
+    background-color: var(--branco);
+    width: 90%;
+    padding-top: 15vh;
+    margin: auto;
+    padding: 5%;
+    border-radius: 30px;
+    box-shadow: 0 40px 180px var(--cinza);
+    
+}
+
+.logo h1 {
+    color: var(--cor-principal);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+    color: var(--cor-secundaria);
+}
+
+.form-container p {
+    color: var(--preto);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+    background-color: var(--branco);
+    border-radius: 30px;
+}
+
+
+button {
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.Termos {
+    color: var(--preto);
+    margin-top: 20px;
+}
+
+.Termos a {
+    color: var(--cor-principal);
+    text-decoration: none;
+}
+
+.Termos a:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

@@ -27,11 +27,13 @@ const subcategories = {
         FONE_OUVIDO: 'Fone de ouvido',
         WEBCAMS: 'Webcams',
         MICROFONE: 'Microfone',
+        CADEIRAS: 'Cadeiras',
         OUTROS: 'Outros'
     },
     HARDWARE: {
         PROCESSADORES: 'Processadores',
         MEMORIA_RAM: 'Memória RAM',
+        PLACA_MAE: 'Placas Mãe',
         PLACAS_DE_VIDEO: 'Placas de vídeo',
         HD_E_SSD: 'HD e SSD',
         PECAS_E_ACESSORIOS: 'Peças e acessórios'
@@ -56,7 +58,9 @@ document.getElementById('categoria').addEventListener('change', function () {
  
 document.getElementById('formulario').addEventListener('submit', function (envioProd) {
     envioProd.preventDefault();
-
+    var select = document.getElementById('subcategoria');
+    var option = select.children[select.selectedIndex];
+    var texto = option.textContent;
     const produto = {
         titulo: document.getElementById('titulo').value,
         imagem: document.getElementById('imagem').value,
@@ -64,7 +68,7 @@ document.getElementById('formulario').addEventListener('submit', function (envio
         preco_antigo: parseFloat(document.getElementById('preco-antigo').value) || null,
         descricao: document.getElementById('descricao').value,
         categoria: document.getElementById('categoria').value,
-        subcategoria: document.getElementById('subcategoria').value
+        subcategoria: texto
     };
 
     let produtos = JSON.parse(localStorage.getItem('produtos')) || [];

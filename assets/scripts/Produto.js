@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
 new Produto(
     "AMD Ryzen 7",
     "/assets/images/imagens-dos-produtos/processador.png",
