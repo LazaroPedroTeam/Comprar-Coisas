@@ -27,11 +27,13 @@ const subcategories = {
         FONE_OUVIDO: 'Fone de ouvido',
         WEBCAMS: 'Webcams',
         MICROFONE: 'Microfone',
+        CADEIRAS: 'Cadeiras',
         OUTROS: 'Outros'
     },
     HARDWARE: {
         PROCESSADORES: 'Processadores',
         MEMORIA_RAM: 'Memória RAM',
+        PLACA_MAE: 'Placas Mãe',
         PLACAS_DE_VIDEO: 'Placas de vídeo',
         HD_E_SSD: 'HD e SSD',
         PECAS_E_ACESSORIOS: 'Peças e acessórios'
