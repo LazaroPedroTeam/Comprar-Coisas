@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pessoa</title>
+    <link rel="icon" href="/assets/images/logo/flavicon-logo.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/components/header.css">
+    <link rel="stylesheet" href="/assets/styles/pages/cadastro-page.css">
+
+</head>
+        
+<body>
+        <header id="header">
+
+        </header>
+            <div class="container">
+                <div class="logo">
+                    <h1>Compre Coisas</h1>
+                </div>
+                <div class="form-container">
+                    <h2>Criar uma nova conta</h2>
+                    <p>É rápido e fácil.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Data de nascimento</label>
+                            <div class="birth-date">
+                                <select required>
+                                    <option>Dia</option>
+                                    <option>1</option>
+                                    <option>5</option>
+                                    <option>10</option>
+                                </select>
+                                <select required>
+                                    <option>Mês</option>
+                                    <option>Jan</option>
+                                    <option>Dez</option>
+                                </select>
+                                <select required>
+                                    <option>Ano</option>
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Gênero</label>
+                            <div class="gender">
+                                <label><input type="radio" name="gender" required> Feminino</label>
+                                <label><input type="radio" name="gender"> Masculino</label>
+                                <label><input type="radio" name="gender"> Personalizado</label>
+                            </div>
+                        </div>
+                        <input type="email" placeholder="Celular ou email" required>
+                        <input type="password" placeholder="Nova senha" required>
+                        <button type="submit">Cadastre-se</button>
+                    </form>
+                    <p class="terms">
+                        Ao clicar em Cadastre-se, você concorda com nossos <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Termos</a>, <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Privacidade</a> e <a href="https://www.youtube.com/shorts/83_ZBY2zeGs">Política de Cookies</a>.
+                    </p>
+                    <a href="/assets/pages/login-page.html" class="login-link">Já tem uma conta?</a>
+                </div>
+            </div>
+        
+    <script src="/assets/scripts/pages/cadastro-script.js"></script>
+    <script src="/assets/scripts/components/header.js"></script>
+    
+</body>
+</html>
