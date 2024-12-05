@@ -60,6 +60,9 @@ barrainput.addEventListener('input', function(event) {
 function formatarTexto(valor){
 return valor.toUpperCase().trim();
 }
+
+
+
 let tempoRestante = 10000;
 const intervalo = setInterval(function() {
 
@@ -88,4 +91,20 @@ const intervalo = setInterval(function() {
 
     
 
-  }, 1000)
+  }, 1000);
+
+
+
+  let cont_cat = 0;
+  function filtrarCateg(categoria){
+    let produtos = document.getElementsByClassName('produto');
+    for (let i = 0; i < produtos.length; i++) {
+        let produto = produtos[i];
+        let cat_sel = produto.querySelector('.categoria-sel').innerText;
+        if(cat_sel == categoria){
+            produto.style.display = 'flex';
+        } else{
+            produto.style.display = 'none';
+        }
+    }
+  }

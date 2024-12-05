@@ -40,6 +40,7 @@ const SubCategorias = {
         FONE_OUVIDO: 'Fone de ouvido',
         WEBCAMS: 'Webcams',
         MICROFONE: 'Microfone',
+        CADEIRAS: 'Cadeiras',
         OUTROS: 'Outros'
     }),
 

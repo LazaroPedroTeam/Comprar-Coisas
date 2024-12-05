@@ -2,6 +2,7 @@
 
 class Produto{
     static contador = 0;
+    
     constructor(titulo, imagem, preco, preco_antigo, descricao, categoria, sub_categoria){
         this.id = this.autoIncremento();
         this.titulo = titulo;
@@ -36,6 +37,7 @@ class Produto{
                     <div class="descricao-produto" title="${this.descricao}">
                         <p>${this.descricao}</p>
                     </div>
+                    <p class="categoria-sel">${this.sub_categoria}</p>
                 </li>
             </a>
         `;
@@ -51,7 +53,7 @@ class Produto{
 document.addEventListener('DOMContentLoaded', function () {
     const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
     produtos.forEach(produto => {
-        new Produto(
+        const novoProduto = new Produto(
             produto.titulo,
             produto.imagem,
             produto.preco,
@@ -62,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     });
 });
+
+
+
+
 new Produto(
     "AMD Ryzen 7",
     "/assets/images/imagens-dos-produtos/processador.png",
