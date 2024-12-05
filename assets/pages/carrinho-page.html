@@ -33,19 +33,14 @@
             <div class="linha "></div>
         </div>
         <div class="produto_carrinho" id="produtoCarrinho">
-            <img src="/assets/images/imagens-dos-produtos/macbook.png" alt="notebook" class="imagem_produto">
+            <img src="/assets/images/imagens-dos-produtos/notebook-generico.png" alt="notebook" class="imagem_produto">
 
             <h2 class="nome-produto">Apple notebook</h2>
-
-
-            
-            <div class="detalhes_produto">
-                
-                
+    
                 <div class="quantidade">
                     <div class="var-butao">
                     <button type="button" class="quantidade_bntA" id="btnDiminuir">-</button>
-                    <span>1</span>
+                    <span id="quantidadeProduto">1</span>
                     <button type="button" class="quantidade_bntD" id="btnAumentar">+</button>
                 </div>
 
@@ -55,9 +50,6 @@
                 </div>
                 </div>
 
-
-            </div>
-
             <p class="preco-produto" id="precoProduto" >R$5.400,99</p>
         </div>
         <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto</button>
@@ -66,12 +58,13 @@
        
         <p class="paragrafo-cep" >Preencher o campo CEP para calcular o valor do frete.</p>
         <label class="label-cep" for="cep">Informe seu CEP</label>
-        <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8">
+        <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8" oninput="calcularFrete()">
+        <div id="mensagemFreteContainer"></div>
     </main>
 </div>
     <footer>
         <button class="btn-finalizarCompra" id="finalizarCompra">Finalizar compra</button>
-        <div id="conteiner-pagamento"></div>
+        <div id="container-pagamento"></div>
     </footer>
 </body>
 <script src="/assets/scripts/components/header.js"></script>
