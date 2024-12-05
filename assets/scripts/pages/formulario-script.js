@@ -58,7 +58,9 @@ document.getElementById('categoria').addEventListener('change', function () {
  
 document.getElementById('formulario').addEventListener('submit', function (envioProd) {
     envioProd.preventDefault();
-
+    var select = document.getElementById('subcategoria');
+    var option = select.children[select.selectedIndex];
+    var texto = option.textContent;
     const produto = {
         titulo: document.getElementById('titulo').value,
         imagem: document.getElementById('imagem').value,
@@ -66,7 +68,7 @@ document.getElementById('formulario').addEventListener('submit', function (envio
         preco_antigo: parseFloat(document.getElementById('preco-antigo').value) || null,
         descricao: document.getElementById('descricao').value,
         categoria: document.getElementById('categoria').value,
-        subcategoria: document.getElementById('subcategoria').value
+        subcategoria: texto
     };
 
     let produtos = JSON.parse(localStorage.getItem('produtos')) || [];

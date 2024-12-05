@@ -99,7 +99,7 @@ const intervalo = setInterval(function() {
   function filtrarCateg(categoria, elemento) {
     let ativo = document.getElementsByClassName('active-cat');
     let produtos = document.getElementsByClassName('produto');
-    if (elemento == 0) {
+    if (categoria == 0) {
         for (let i = 0; i < produtos.length; i++) {
             produtos[i].style.display = 'flex';
         }
