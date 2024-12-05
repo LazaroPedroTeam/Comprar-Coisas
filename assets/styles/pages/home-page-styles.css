@@ -159,3 +159,8 @@ section{
     color: var(--branco);
     font-size: 2rem;
 }
+.active-cat{
+    background: var(--cor-contraste) !important;
+    color: var(--branco) !important;
+    border-color: var(--branco) !important;
+}

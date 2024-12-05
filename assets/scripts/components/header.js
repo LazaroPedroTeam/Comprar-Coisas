@@ -96,15 +96,28 @@ const intervalo = setInterval(function() {
 
 
   let cont_cat = 0;
-  function filtrarCateg(categoria){
+  function filtrarCateg(categoria, elemento) {
+    let ativo = document.getElementsByClassName('active-cat');
     let produtos = document.getElementsByClassName('produto');
-    for (let i = 0; i < produtos.length; i++) {
-        let produto = produtos[i];
-        let cat_sel = produto.querySelector('.categoria-sel').innerText;
-        if(cat_sel == categoria){
-            produto.style.display = 'flex';
-        } else{
-            produto.style.display = 'none';
+    if (elemento == 0) {
+        for (let i = 0; i < produtos.length; i++) {
+            produtos[i].style.display = 'flex';
+        }
+    } else {
+        for (let i = 0; i < ativo.length; i++) {
+            ativo[i].classList.remove('active-cat');
+        }
+        elemento.classList.add('active-cat');
+        for (let i = 0; i < produtos.length; i++) {
+            let cat_sel = produtos[i].querySelector('.categoria-sel').innerText;
+            if (cat_sel == categoria) {
+                produtos[i].style.display = 'flex'; 
+            } else {
+                produtos[i].style.display = 'none';
+            }
         }
     }
-  }
+}
+   
+
+  
