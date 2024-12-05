@@ -21,7 +21,7 @@ class Produto{
         let ulProduto = document.createElement("ul");
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
-            <a href="/assets/pages/produto-page.html">
+            <a href="/assets/pages/product-page.html">
                 <li class="imagem-produto">
                     <img src="${this.imagem}" alt="Imagem do ${this.titulo}">
                 </li>

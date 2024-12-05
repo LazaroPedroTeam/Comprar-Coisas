@@ -10,7 +10,7 @@
   .foto_do_produto {
     display: flex;
     max-width: 1200px;
-    width: 100%;
+    width: 200%;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -18,6 +18,8 @@
   }
 
   .imagem_do_produto {
+    width: 200%;
+    margin-top: 0%;
     flex: 1;
     padding: 20px;
     display: flex;
