@@ -35,9 +35,11 @@
   padding-top: 10vh;
   margin-left: 250px;
   padding: 20px;
+  overflow-x: hidden;
+  margin-bottom: 100px; 
 }
 
-.informaçoes {
+.informaçoes1, .informaçoes2, .informaçoes3 {
   position: relative;
   width: 100vw;
   background-color: #d3bfe88a;
@@ -46,25 +48,87 @@
   margin-inline: 0;
   margin-right: 0;
   margin-left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
+
 .subtitulo {
-  position: relative;
-  width: 100vw;
-  background-color: #a877dd8a;
-  background-size: cover;
-  background-position: center;
+  position: relative; 
+  width: 100vw; 
+  background-color: #a877dd8a; 
+  background-size: cover; 
+  background-attachment: fixed; 
   margin-inline: 0;
   margin-right: 0;
   margin-left: 0;
+  color: #ffffff; 
+  padding: 20px;
 }
 
+.subtitulo p {
+  position: relative; 
+  left: -10px; 
+}
+
+.informaçoes1 p {
+  position: relative; 
+  left: -613px ; 
+  
+}
+.informaçoes2 p {
+  position: relative; 
+  left: -402px ; 
+
+}
+.informaçoes3 p {
+  position: relative; 
+  left: -337px ; 
+ 
+}
+
+
+
+
+
 .botao {
+  width: 250px;        
+  height: 50px;
   background-color: #422151; 
   color: white; 
   border: none; 
   padding: 10px 20px; 
-  border-radius: 5px; 
+  border-radius: 35px; 
   cursor: pointer; 
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  left: 500px;
+}
 
+.botao2, .botao3 {
+  width: 250px;        
+  height: 50px;
+  background-color: #422151;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 20px;
+}
+
+.botao2 {
+  left: 250px; 
+}
+
+.botao3 {
+  right: 250px; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
