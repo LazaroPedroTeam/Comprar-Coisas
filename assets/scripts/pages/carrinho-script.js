@@ -23,7 +23,6 @@ function atualizarQuantidade() {
 function atualizarPreco() {
     if (cepInput.value.length === 8) {
         precoComFrete = (precoBase * quantidade) + frete;
-        ("Frete de R$9,99, adicionado ao valor do produto");
     } else {
         precoComFrete = precoBase * quantidade;
     }
@@ -46,14 +45,14 @@ function atualizaPreco() {
 
 
 btnAumentar.onclick = function () {
-    quantidade *= 2; 
+    quantidade += 1; 
     atualizarQuantidade();
     atualizarPreco();
 };
 
 btnDiminuir.onclick = function () {
     if (quantidade > 1) {
-        quantidade /= 2; 
+        quantidade -= 1; 
         atualizarQuantidade();
         atualizarPreco();
     }
@@ -160,6 +159,7 @@ function calcularFrete() {
         mensagemFrete.style.color = "var(--cinza)";
         mensagemFrete.style.fontSize = "1rem";
         mensagemFrete.style.marginTop = "10px";
+        mensagemFrete.style.fontFamily = "var(--fonte-categorias)";
         mensagemFreteContainer.appendChild(mensagemFrete);
 
     } else {
