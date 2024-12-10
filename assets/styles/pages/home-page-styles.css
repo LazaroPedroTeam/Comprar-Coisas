@@ -164,3 +164,6 @@ section{
     color: var(--branco) !important;
     border-color: var(--branco) !important;
 }
+.sub-categoria-sel, .categoria-sel{
+    display: none;
+}

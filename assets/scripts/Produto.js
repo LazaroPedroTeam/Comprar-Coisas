@@ -37,7 +37,8 @@ class Produto{
                     <div class="descricao-produto" title="${this.descricao}">
                         <p>${this.descricao}</p>
                     </div>
-                    <p class="categoria-sel">${this.sub_categoria}</p>
+                    <p class="categoria-sel">${this.categoria}</p>
+                    <p class="sub-categoria-sel">${this.sub_categoria}</p>
                 </li>
             </a>
         `;
