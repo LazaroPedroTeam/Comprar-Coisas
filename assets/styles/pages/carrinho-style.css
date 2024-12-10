@@ -119,8 +119,7 @@ main {
     width: 20%;
     height: 20%;
     margin-left: 10px;
-    border: 2px solid var(--cor-principal);
-    border-radius: 20%;
+    border: 2px solid var(--cor-secundaria);
     ;
 }
 
@@ -224,6 +223,10 @@ main {
     border-radius: 5px;
 }
 
+.btn-finalizarCompra:hover{
+    background-color: var(--cor-secundaria);
+}
+
 .produto_carrinho {
     width: 100%;
     display: flex;
@@ -239,6 +242,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 
 .btn-restaurarProduto {
     background-color: var(--cor-principal);
@@ -283,6 +287,30 @@ main {
     border-radius: 5px;
 }
 
-.mensagemFreteContainer{
+.bntfinalizar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.mensagemFreteContainer {
     font-family: var(--fonte-titulo);
 }
+
+.btn-adicionarProdutos {
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.frase-informativa {
+    font-family: var(--fonte-categorias);
+    font-size: 1rem;
+    margin-left: 10px;
+    color: var(--cinza);
+}
+

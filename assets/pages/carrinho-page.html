@@ -52,20 +52,21 @@
                     </div>
 
                     <div class="remover">
-                        <button type="button" class="remove_bnt" id="btnRemover">Remover</button>
                         <img src="/assets/images/icons/Lixeiro.png" alt="lixeiro" class="img_lixeiro">
+                        <button type="button" class="remove_bnt" id="btnRemover">Remover</button>
                     </div>
                 </div>
 
                 <p class="preco-produto" id="precoProduto">R$5.400,99</p>
             </div>
-            <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto</button>
+            
+            <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto Anterior</button>
 
             <hr class="linha-inferior">
 
             <p class="paragrafo-cep">Preencher o campo CEP para calcular o valor do frete.</p>
             <label class="label-cep" for="cep">Informe seu CEP</label>
-            <input class="input-cep" type="number" id="cep" placeholder="EX: 01001000" maxlength="8"
+            <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8"
                 oninput="calcularFrete()">
             <div id="mensagemFreteContainer"></div>
         </main>

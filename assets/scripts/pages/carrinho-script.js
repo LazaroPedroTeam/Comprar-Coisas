@@ -17,7 +17,7 @@ let precoComFrete = precoBase;
 let pagamentoAdicionado = false;
 
 function atualizarQuantidade() {
-    quantidadeProdutoElem.textContent = quantidade; 
+    quantidadeProdutoElem.textContent = quantidade;
 }
 
 function atualizarPreco() {
@@ -29,14 +29,14 @@ function atualizarPreco() {
     precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
 }
 
-function atualizaPreco() { 
+function atualizaPreco() {
     const mensagemFreteContainer = document.getElementById("mensagemFreteContainer");
     mensagemFreteContainer.innerHTML = "";
 
     if (cepInput.value.length === 8) {
         precoComFrete = (precoBase * quantidade) + frete;
         precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
-        
+
     } else {
         precoComFrete = precoBase * quantidade;
         precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
@@ -45,14 +45,14 @@ function atualizaPreco() {
 
 
 btnAumentar.onclick = function () {
-    quantidade += 1; 
+    quantidade += 1;
     atualizarQuantidade();
     atualizarPreco();
 };
 
 btnDiminuir.onclick = function () {
     if (quantidade > 1) {
-        quantidade -= 1; 
+        quantidade -= 1;
         atualizarQuantidade();
         atualizarPreco();
     }
@@ -61,18 +61,37 @@ btnDiminuir.onclick = function () {
 btnRemover.onclick = function () {
     produtoCarrinho.style.display = 'none';
     restaurarProdutoBtn.style.display = 'block';
-};
 
-restaurarProdutoBtn.onclick = function () {
-    produtoCarrinho.style.display = 'flex';
-    restaurarProdutoBtn.style.display = 'none';
-};
+
+   const btnAdicionarProdutos = document.createElement("button");
+    btnAdicionarProdutos.textContent = "Adicionar produtos";
+    btnAdicionarProdutos.className = "btn-adicionarProdutos";
+    btnAdicionarProdutos.onclick = function () {
+        window.location.href = "/index.html"
+    }
+
+
+    const fraseInformativa = document.createElement("text");
+    fraseInformativa.textContent = "Clique para adicionar mais itens ao seu carrinho";
+    fraseInformativa.className = "frase-informativa"
+
+    restaurarProdutoBtn.insertAdjacentElement("afterend", btnAdicionarProdutos);
+    btnAdicionarProdutos.insertAdjacentElement("afterend", fraseInformativa);
+
+    restaurarProdutoBtn.onclick = function () {
+        produtoCarrinho.style.display = 'flex';
+        restaurarProdutoBtn.style.display = 'none';
+        btnAdicionarProdutos.remove();
+        fraseInformativa.remove();
+    };
+}
+
 
 finalizarCompraBtn.onclick = function () {
     if (!pagamentoAdicionado) {
         const dadosCadastraisContainer = document.createElement("div");
         dadosCadastraisContainer.classList.add("container-pagamento");
-        dadosCadastraisContainer.innerHTML =  `
+        dadosCadastraisContainer.innerHTML = `
        <div class="dados-cadastrais">
         <h2 class="titulo">Dados Cadastrais</h2>
         <div class="campoNome">
@@ -132,7 +151,7 @@ finalizarCompraBtn.onclick = function () {
         const formPagamento = document.getElementById("formPagamento");
         formPagamento.onsubmit = function (event) {
             const formValido = formPagamento.checkValidity();
-            if(!formValido){
+            if (!formValido) {
                 alert("Por favor, preencha todos os campos obrigatórios");
                 return;
             }
@@ -141,7 +160,7 @@ finalizarCompraBtn.onclick = function () {
 
         pagamentoAdicionado = true;
     }
-};    
+};
 
 
 function calcularFrete() {
@@ -153,7 +172,7 @@ function calcularFrete() {
     if (cep.length === 8) {
         precoComFrete = (precoBase * quantidade) + frete;
         precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
-   
+
         const mensagemFrete = document.createElement("p");
         mensagemFrete.textContent = "Frete de R$9,99, adicionado ao valor do produto.";
         mensagemFrete.style.color = "var(--cinza)";
