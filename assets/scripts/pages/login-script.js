@@ -11,6 +11,7 @@
     }
   
     function confereBotao() {
+      const email = emailConfirir.value;
       const senhaSus = senha.value.trim();
   
       if (validaRegex(email) && senhaSus) {
