@@ -106,14 +106,14 @@ const intervalo = setInterval(function() {
     }
     let ativo = document.getElementsByClassName('active-cat');
     let produtos = document.getElementsByClassName('produto');
+    for (let i = 0; i < ativo.length; i++) {
+        ativo[i].classList.remove('active-cat');
+    }
     if (sub_categoria == 0) {
         for (let i = 0; i < produtos.length; i++) {
             produtos[i].style.display = 'flex';
         }
     } else {
-        for (let i = 0; i < ativo.length; i++) {
-            ativo[i].classList.remove('active-cat');
-        }
         elemento.classList.add('active-cat');
         for (let i = 0; i < produtos.length; i++) {
             let sub_cat_sel = produtos[i].querySelector('.sub-categoria-sel').innerText;
