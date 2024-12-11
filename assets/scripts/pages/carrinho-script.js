@@ -71,12 +71,11 @@ btnRemover.onclick = function () {
     }
 
 
-    const fraseInformativa = document.createElement("text");
-    fraseInformativa.textContent = "Clique para adicionar mais itens ao seu carrinho";
-    fraseInformativa.className = "frase-informativa"
+
 
     restaurarProdutoBtn.insertAdjacentElement("afterend", btnAdicionarProdutos);
-    btnAdicionarProdutos.insertAdjacentElement("afterend", fraseInformativa);
+
+
 
     restaurarProdutoBtn.onclick = function () {
         produtoCarrinho.style.display = 'flex';
@@ -174,7 +173,7 @@ function calcularFrete() {
         precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
 
         const mensagemFrete = document.createElement("p");
-        mensagemFrete.textContent = "Frete de R$9,99, adicionado ao valor do produto.";
+        mensagemFrete.textContent = "Frete fixo de R$9,99, adicionado ao valor do produto.";
         mensagemFrete.style.color = "var(--cinza)";
         mensagemFrete.style.fontSize = "1rem";
         mensagemFrete.style.marginTop = "10px";

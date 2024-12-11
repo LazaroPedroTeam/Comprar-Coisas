@@ -310,7 +310,7 @@ main {
 .frase-informativa {
     font-family: var(--fonte-categorias);
     font-size: 1rem;
-    margin-left: 10px;
     color: var(--cinza);
+    justify-content: center;
 }
 
