@@ -64,7 +64,7 @@ btnRemover.onclick = function () {
 
 
    const btnAdicionarProdutos = document.createElement("button");
-    btnAdicionarProdutos.textContent = "Adicionar produtos";
+    btnAdicionarProdutos.textContent = "Adicionar mais produtos";
     btnAdicionarProdutos.className = "btn-adicionarProdutos";
     btnAdicionarProdutos.onclick = function () {
         window.location.href = "/index.html"
@@ -83,25 +83,6 @@ btnRemover.onclick = function () {
 
 finalizarCompraBtn.onclick = function () {
     if (!pagamentoAdicionado) {
-        const dadosCadastraisContainer = document.createElement("div");
-        dadosCadastraisContainer.classList.add("container-pagamento");
-        dadosCadastraisContainer.innerHTML = `
-       <div class="dados-cadastrais">
-        <h2 class="titulo">Dados Cadastrais</h2>
-        <div class="campoNome">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome" required>
-        </div>
-        <div class="campoEmail">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Digite seu email" required>
-        </div>
-        <div class="campoTelefone">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" placeholder="Digite seu telefone" required>
-        </div>
-    </div>
-`;
         const enderecoPagamentoContainer = document.createElement("div");
         enderecoPagamentoContainer.classList.add("container-pagamento");
         enderecoPagamentoContainer.innerHTML = `
@@ -120,9 +101,9 @@ finalizarCompraBtn.onclick = function () {
                 <label for="cidade">Cidade:</label>
                 <input type="text" id="cidade" placeholder="Cidade" required>
             </div>
-            <div class="campoEstado">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" placeholder="Estado" required>
+            <div class="campoUF">
+                <label for="UF">UF:</label>
+                <input type="text" id="UF" placeholder="UF" maxlength="2" required>
             </div>
             <div class="forma-pagamento">
                 <h3 class="titulo-secundario">Forma de Pagamento</h3>
@@ -139,7 +120,6 @@ finalizarCompraBtn.onclick = function () {
             </form>
         `;
 
-        containerPagamento.appendChild(dadosCadastraisContainer);
         containerPagamento.appendChild(enderecoPagamentoContainer);
 
         const formPagamento = document.getElementById("formPagamento");

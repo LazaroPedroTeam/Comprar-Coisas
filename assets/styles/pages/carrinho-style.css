@@ -161,6 +161,7 @@ main {
     background-color: var(--branco);
     color: var(--cor-principal);
     font-family: var(--fonte-titulo);
+    cursor: pointer;
 }
 
 .quantidade_bntD {
@@ -170,6 +171,7 @@ main {
     background-color: var(--branco);
     color: var(--cor-principal);
     font-family: var(--fonte-titulo);
+    cursor: pointer;
 }
 
 .remove_bnt {
@@ -241,6 +243,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 
