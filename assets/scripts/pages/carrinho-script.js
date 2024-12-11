@@ -70,12 +70,7 @@ btnRemover.onclick = function () {
         window.location.href = "/index.html"
     }
 
-
-
-
     restaurarProdutoBtn.insertAdjacentElement("afterend", btnAdicionarProdutos);
-
-
 
     restaurarProdutoBtn.onclick = function () {
         produtoCarrinho.style.display = 'flex';
