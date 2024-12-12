@@ -95,6 +95,7 @@
 .ultimo-elem a{
     border-radius:  0 0 20px 20px;
 }
+
 .icon-perfil, .icon-carrinho{
     display: flex;
     align-items: center;
@@ -142,3 +143,6 @@ ul li{
 a{
     text-decoration: none;
 }
+
+
+
