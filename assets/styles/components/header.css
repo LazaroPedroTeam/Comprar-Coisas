@@ -27,17 +27,17 @@
     border: none;
     color: var(--cinza);
     background-color: var(--branco);
-    background-size: 30px;
+    background-size: 2rem;
     background-image: url('/assets/images/icons/lupa-icon.png');
     background-repeat: no-repeat; 
-    background-position: right 10px center; 
+    background-position: right 1.5rem center; 
   
 }
 .categorias{
     display: flex;
     align-items: center;
-    padding: 5px 20px;
-    gap: 20px;
+    padding: 0.7rem 1rem;
+    gap: 0.5rem;
     border: var(--branco) 2px solid;
     font-family: var(--fonte-categorias);
     border-radius: 20px;
@@ -48,13 +48,12 @@
 .padrao{
     position: relative;
     display: flex;
-    gap: 50px;
+    gap: 2rem;
     cursor: pointer;
 
 }
 .padrao img{
-    height: 20px;
-    width: 20px;
+    height: 1.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -108,8 +107,8 @@
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 5px var(--preto);
 }
-.icon-perfil img, .icon-carrinho img{
-    height: 3vh;
+.icon-perfil img, .icon-carrinho img, .categorias img{
+    height: 1.5rem;
 }
 .icon-carrinho{
     position: relative;
