@@ -20,30 +20,6 @@ function atualizarQuantidade() {
     quantidadeProdutoElem.textContent = quantidade;
 }
 
-function atualizarPreco() {
-    if (cepInput.value.length === 8) {
-        precoComFrete = (precoBase * quantidade) + frete;
-    } else {
-        precoComFrete = precoBase * quantidade;
-    }
-    precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
-}
-
-function atualizaPreco() {
-    const mensagemFreteContainer = document.getElementById("mensagemFreteContainer");
-    mensagemFreteContainer.innerHTML = "";
-
-    if (cepInput.value.length === 8) {
-        precoComFrete = (precoBase * quantidade) + frete;
-        precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
-
-    } else {
-        precoComFrete = precoBase * quantidade;
-        precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
-    }
-}
-
-
 btnAumentar.onclick = function () {
     quantidade += 1;
     atualizarQuantidade();
@@ -64,19 +40,13 @@ btnRemover.onclick = function () {
 
 
    const btnAdicionarProdutos = document.createElement("button");
-    btnAdicionarProdutos.textContent = "Adicionar produtos";
+    btnAdicionarProdutos.textContent = "Adicionar mais produtos";
     btnAdicionarProdutos.className = "btn-adicionarProdutos";
     btnAdicionarProdutos.onclick = function () {
         window.location.href = "/index.html"
     }
 
-
-    const fraseInformativa = document.createElement("text");
-    fraseInformativa.textContent = "Clique para adicionar mais itens ao seu carrinho";
-    fraseInformativa.className = "frase-informativa"
-
     restaurarProdutoBtn.insertAdjacentElement("afterend", btnAdicionarProdutos);
-    btnAdicionarProdutos.insertAdjacentElement("afterend", fraseInformativa);
 
     restaurarProdutoBtn.onclick = function () {
         produtoCarrinho.style.display = 'flex';
@@ -89,25 +59,6 @@ btnRemover.onclick = function () {
 
 finalizarCompraBtn.onclick = function () {
     if (!pagamentoAdicionado) {
-        const dadosCadastraisContainer = document.createElement("div");
-        dadosCadastraisContainer.classList.add("container-pagamento");
-        dadosCadastraisContainer.innerHTML = `
-       <div class="dados-cadastrais">
-        <h2 class="titulo">Dados Cadastrais</h2>
-        <div class="campoNome">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome" required>
-        </div>
-        <div class="campoEmail">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Digite seu email" required>
-        </div>
-        <div class="campoTelefone">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" placeholder="Digite seu telefone" required>
-        </div>
-    </div>
-`;
         const enderecoPagamentoContainer = document.createElement("div");
         enderecoPagamentoContainer.classList.add("container-pagamento");
         enderecoPagamentoContainer.innerHTML = `
@@ -126,9 +77,9 @@ finalizarCompraBtn.onclick = function () {
                 <label for="cidade">Cidade:</label>
                 <input type="text" id="cidade" placeholder="Cidade" required>
             </div>
-            <div class="campoEstado">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" placeholder="Estado" required>
+            <div class="campoUF">
+                <label for="UF">UF:</label>
+                <input type="text" id="UF" placeholder="UF" maxlength="2" required>
             </div>
             <div class="forma-pagamento">
                 <h3 class="titulo-secundario">Forma de Pagamento</h3>
@@ -145,7 +96,6 @@ finalizarCompraBtn.onclick = function () {
             </form>
         `;
 
-        containerPagamento.appendChild(dadosCadastraisContainer);
         containerPagamento.appendChild(enderecoPagamentoContainer);
 
         const formPagamento = document.getElementById("formPagamento");
@@ -174,7 +124,7 @@ function calcularFrete() {
         precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
 
         const mensagemFrete = document.createElement("p");
-        mensagemFrete.textContent = "Frete de R$9,99, adicionado ao valor do produto.";
+        mensagemFrete.textContent = "Frete fixo de R$9,99, adicionado ao valor do produto.";
         mensagemFrete.style.color = "var(--cinza)";
         mensagemFrete.style.fontSize = "1rem";
         mensagemFrete.style.marginTop = "10px";

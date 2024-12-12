@@ -10,7 +10,6 @@
     box-shadow: 0 40px 180px var(--cinza);
     
 }
-
 .logo h1 {
     color: var(--cor-principal);
     font-size: 36px;
@@ -62,6 +61,7 @@ button {
 button:hover {
     background-color: var(--cor-secundaria);
 }
+
 
 .Termos {
     color: var(--preto);

@@ -23,9 +23,9 @@ class Produto{
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
             <a href="/assets/pages/product-page.html">
-                <li class="imagem-produto">
-                    <img src="${this.imagem}" alt="Imagem do ${this.titulo}">
-                </li>
+
+                    <img src="${this.imagem}" class="imagem-produto" alt="Imagem do ${this.titulo}">
+
                 <li class="texto-produto">
                     <div class="preco-produto">
                         <p class="preco-novo" title="${this.preco}" >${this.preco}</p>
