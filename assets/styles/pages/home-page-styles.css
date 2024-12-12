@@ -10,12 +10,10 @@ section{
 #container-produtos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 50px;
+    gap: 2rem;
     justify-content: space-between;
 }
 .produto{
-    width: 300px;
-    height: 400px;
     overflow: hidden;
     box-shadow: 0 0 5px var(--preto);
     border-radius: 7%;
@@ -32,11 +30,13 @@ section{
 }
 .imagem-produto{
     width: 100%;
-    height: 200px;
+    height: 50%;
     overflow: hidden;
 }
 .imagem-produto img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 .preco-produto{
@@ -74,22 +74,26 @@ section{
 #categorias-produtos .categorias-seletor{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .seletor p{
     display: flex;
     align-items: center;
-    padding: 5px 20px;
-    gap: 20px;
+    padding: 0.5rem;
+    gap: 0.5rem;
     border: var(--cor-principal) 2px solid;
     font-family: var(--fonte-categorias);
     border-radius: 10px;
     color: var(--cor-principal);
+    flex: 1;
+
    
 }
 .seletor{
     position: relative;
     cursor: pointer;
+    display: flex;
 }
 .seletor img{
     height: 20px;
@@ -107,12 +111,17 @@ section{
     transform: rotate(180deg);
     
 }
+
+#categorias-produtos{
+    display: flex;
+}
 .cat-dropdown{
     display: none;
     position: absolute;
     width: 100%;
     top: 100%;
     left: 0;
+    z-index: 5;
 
 }
 .cat-dropdown li{
@@ -166,4 +175,19 @@ section{
 }
 .sub-categoria-sel, .categoria-sel{
     display: none;
+}
+
+
+
+@media (max-width : 1200px){
+    #container-produtos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+@media (max-width : 800px){
+    #container-produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }

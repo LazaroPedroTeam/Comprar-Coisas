@@ -63,7 +63,7 @@ return valor.toUpperCase().trim();
 
 
 
-let tempoRestante = 10000;
+let tempoRestante = 10 *60;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
@@ -95,7 +95,6 @@ const intervalo = setInterval(function() {
 
 
 
-  let cont_cat = 0;
   function filtrarCateg(cat,sub_categoria, elemento) {
     categor = {
         1: 'PCs e Notebooks',
