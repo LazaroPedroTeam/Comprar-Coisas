@@ -19,7 +19,7 @@ class Produto{
     exibirProduto() {
         let campo = document.getElementById("container-produtos");
 
-        let ulProduto = document.createElement("li");
+        let ulProduto = document.createElement("ul");
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
             <a href="/assets/pages/product-page.html">
