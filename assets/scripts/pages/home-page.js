@@ -1,5 +1,5 @@
 
-let tempoRestante = 10 *60;
+let tempoRestante = 10 ;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
@@ -8,7 +8,9 @@ const intervalo = setInterval(function() {
     segundos = String(segundos).padStart(2, '0');
 
     document.getElementById("contador").innerHTML = "0 Dias 00:" + minutos + ":" + segundos;
-
+    if(tempoRestante==0){
+        document.getElementById("promocao").innerHTML = "Voçê perdeu a promoção!!"
+    }
     if(tempoRestante>0){
         tempoRestante--; 
     }
