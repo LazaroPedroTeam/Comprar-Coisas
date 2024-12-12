@@ -2,7 +2,6 @@
     padding-top: 15vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #f5f5f5;
 }
 
@@ -24,7 +23,6 @@
 .cadastro-produto label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
 }
 
 .cadastro-produto input, 
@@ -45,8 +43,6 @@
     color: var(--branco);
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
