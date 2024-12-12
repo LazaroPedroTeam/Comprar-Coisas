@@ -22,10 +22,10 @@ class Produto{
         let ulProduto = document.createElement("ul");
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
-            
-
+            <a href="/assets/pages/product-page.html">
+                
                     <img src="${this.imagem}" class="imagem-produto" alt="Imagem do ${this.titulo}">
-                <a href="/assets/pages/product-page.html">
+
                 <li class="texto-produto">
                     <div class="preco-produto">
                         <p class="preco-novo" title="${this.preco}" >${this.preco}</p>

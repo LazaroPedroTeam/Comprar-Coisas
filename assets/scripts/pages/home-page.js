@@ -1,5 +1,5 @@
 
-let tempoRestante = 10 ;
+let tempoRestante = 10 * 60;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
