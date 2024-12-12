@@ -17,61 +17,72 @@
 
     <main>
         <aside class="barra-lateral">
-            <img src="/assets/images/icons/perfil-icon.png" alt="Foto de Perfil">
+            <img id="perfil" src="/assets/images/icons/perfil-icon.png" alt="Foto de Perfil">
+            <input type="file" id="entrada4" accept="image/*">
             <br><br>
-            <p>Minha Conta</p>
+            <a href="">Minha Conta</a>
             <br>
-            <p>Informações Pessoais</p>
+            <a href="#info">Minhas Informações</a>
             <br>
-            <p>Meus Pedidos</p>
+            <a href="#pedidos">Meus Pedidos</a>
             <br>
-            <p>Vendas</p>
+            <a href="#vendas">Vendas</a>
             <br>
-            <p>Endereço de Entregas</p>
+            <a href="#endereço">Endereço de Entrega</a>
             <br>
-            <p>Pagamentos</p>
+            <a href="#pagamento">Pagamentos</a>
             <br>
-            <p>Configurações</p>
+            <a href="#config">Configurações</a>
         </aside>
-        <div class="corpo"> <!-- parte central da page -->
-            <div> <!-- parte do topo com foto e tals-->
-                <img src="/assets/images/icons/perfil-icon.png" alt="Foto de Perfil">
-                <p>Ola Usuario!</p>
-                <p>Bem Vindo Novamente</p>
+        <div class="corpo">
+            <div class="subtitulo">
+                <h2 id="info">Informações Pessoais</h2>
             </div>
-            <h2 class="subtitulo p">Informações Pessoais</h2>
             <br>
-            <div class="informaçoes1">
+            <div class="informaçoes">
                 <br>
-                <div>
+                <div class="">
                     <p>Nome:</p>
-                    <p>Usuario da silva</p>
-                    <br>
+                    <p id="nome">Usuario da silva</p>
+                    <input type="text" id="entrada" placeholder="Digite o novo texto" />
+                    <div><br></div>
                     <p>Endereço de email:</p>
-                    <p>usuario.ofsilva@hotmail.com</p>
-                    <br>
+                    <p id="email">usuario.ofsilva@hotmail.com</p>
+                    <input type="email" id="entrada2" placeholder="Digite seu e-mail" required>
+                    <div><br></div>
                     <p>Telefone:</p>
-                    <p>+55 77 9 998-7766</p>
+                    <p id="tell">+55 77 9 998-7766</p>
+                    <input type="tel" id="entrada3" placeholder="Digite o novo Número"/>
                 </div>
                 <br>
             </div>
             <br>
-            <h2 class="subtitulo">Meus Pedidos</h2>
+            <div class="subtitulo">
+                <h2 id="pedidos">Meus Pedidos</h2>
+            </div>
             <br>
             <button class="botao meio">Comprar Produto +</button>
             <br><br>
-            <h2 class="subtitulo">Endereço de Entrega</h2>
             <br>
-            <div class="informaçoes2">
+            <div class="subtitulo">
+                <h2 id="vendas">Minhas Vendas</h2>
+            </div>
+            <br>
+            <button class="botao meio" id="Vender">Vender Produto +</button>
+            <br><br>
+            <div class="subtitulo">
+                <h2 id="endereço">Endereço de Entrega</h2>
+            </div>
+            <br>
+            <div class="informaçoes">
                 <br>
                 <div>
                     <br>
                     <p>Rua:</p>
                     <p>Rua da silva</p>
                     <br>
-                    <p>Cidade estado:</p>
+                    <p>Cidade:</p>
                     <p>Xique Xique - BA</p>
-                    <br>
                 </div>
                 <div>
                     <br>
@@ -85,11 +96,13 @@
                 <br>
             </div>
             <br>
-            <button class="botao meio">Adicionar Endereço +</button>
+            <button class="botao meio">Alterar Endereço +</button>
             <br><br>
-            <h2 class="subtitulo">Pagamento</h2>
+            <div class="subtitulo">
+                <h2 id="pagamento">Pagamentos</h2>
+            </div>
             <br>
-            <div class="informaçoes3">
+            <div class="informaçoes">
                 <br>
                 <div>
                     <br>
@@ -98,7 +111,6 @@
                     <br>
                     <p>Bandeira:</p>
                     <p>Visa</p>
-                    <br>
                 </div>
                 <div>
                     <br>
@@ -112,20 +124,22 @@
                 <br>
             </div>
             <br>
-            <button class="botao">Adicionar Cartão +</button>
+            <button class="botao">Alterar Cartão +</button>
             <br><br>
-            <h2 class="subtitulo">Configurações</h2>
+            <div class="subtitulo">
+                <h2 id="config">Configurações</h2>
+            </div>
             <br>
             <div>
                 <br>
                 <div class="container">
-                    <button class="botao2">Alterar imagem +</button>
-                    <button class="botao3">Alterar Email +</button>
+                    <button class="botao2" id="bperfil">Alterar imagem +</button>
+                    <button class="botao3" id="bemail">Alterar Email +</button>
                 </div>
                 <br><br>
                 <div class="container">
-                    <button class="botao2">Alterar Nome +</button>
-                    <button class="botao3">Alterar Telefone +</button>
+                    <button class="botao2" id="bnome">Alterar Nome +</button>
+                    <button class="botao3" id="btell">Alterar Telefone +</button>
                 </div>
             </div>
 
@@ -133,5 +147,6 @@
     </main>
 </body>
 <script src="/assets/scripts/components/header.js"></script>
+<script src="/assets/scripts/pages/perfil-page.js"></script>
 
 </html>

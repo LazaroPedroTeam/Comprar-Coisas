@@ -1,24 +1,35 @@
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#perfil {
+ width: 10vh;;
+  height: 10vh;
+ border-radius: 50%;
+ border: 3px solid black;
+}
 
 .barra-lateral {
   position: fixed;
-  top: 10%;
+  top: 10vh;
   left: 0;
-  width: 270px;
+  width: 35vh;
   height: 100vh;
   background-color: #ffffff;
   color: #000000;
   padding: 20px;
   overflow-y: auto;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 
 
 .barra-lateral a {
-  /* pro link ficar clicavel e maiorzin bonitin */
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   display: block;
   padding: 10px 15px;
   border-radius: 4px;
@@ -26,75 +37,61 @@
   transition: background-color 0.3s;
 }
 
-.barra-lateral a:hover {
-  background-color: #555;
+.barra-lateral ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: transparent; 
+  transition: background-color 0.3s ease;
 }
 
+.barra-lateral a:hover::before {
+  background-color: #8a0bbc;
+}
+
+.barra-lateral a:hover {
+  transform: translateX(10px);
+}
 
 .corpo {
-  padding-top: 10vh;
-  margin-left: 250px;
-  padding: 20px;
-  overflow-x: hidden;
-  margin-bottom: 100px; 
+ margin-left: 35vh;
+ margin-bottom: 10vh;
 }
 
-.informaçoes1, .informaçoes2, .informaçoes3 {
-  position: relative;
+.informaçoes {
   width: 100vw;
   background-color: #d3bfe88a;
-  background-size: cover;
-  background-position: center;
-  margin-inline: 0;
-  margin-right: 0;
-  margin-left: 0;
-  display: flex;
-  justify-content: space-between;
 }
+
+.informaçoes p{
+  margin-left: 2%;
+}
+
 
 
 .subtitulo {
-  position: relative; 
   width: 100vw; 
   background-color: #a877dd8a; 
-  background-size: cover; 
-  background-attachment: fixed; 
   margin-inline: 0;
   margin-right: 0;
   margin-left: 0;
   color: #ffffff; 
-  padding: 20px;
+  padding: 2vh;
 }
 
-.subtitulo p {
-  position: relative; 
-  left: -10px; 
+.subtitulo h2 {
+  margin-left: 1%;
 }
-
-.informaçoes1 p {
-  position: relative; 
-  left: -613px ; 
-  
-}
-.informaçoes2 p {
-  position: relative; 
-  left: -402px ; 
-
-}
-.informaçoes3 p {
-  position: relative; 
-  left: -337px ; 
- 
-}
-
-
 
 
 
 .botao {
   width: 250px;        
   height: 50px;
-  background-color: #422151; 
+  background-color: #7B00E5; 
   color: white; 
   border: none; 
   padding: 10px 20px; 
@@ -103,13 +100,13 @@
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   position: relative;
-  left: 500px;
+  left: 40%;
 }
 
 .botao2, .botao3 {
   width: 250px;        
   height: 50px;
-  background-color: #422151;
+  background-color: #7B00E5;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -121,14 +118,30 @@
 }
 
 .botao2 {
-  left: 250px; 
+  left: 30vh; 
 }
 
 .botao3 {
-  right: 250px; 
+  right: 30vh; 
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+#entrada, #entrada2, #entrada3 {
+  display: none;
+  font-size: inherit; 
+  border: none; 
+  padding: 0; 
+  margin: 0; 
+  width: auto; 
+  outline: none; 
+  background: transparent; 
+  margin-left: 2%
+}
+
+#entrada4 {
+ display: none;
 }
