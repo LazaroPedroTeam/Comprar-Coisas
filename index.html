@@ -21,18 +21,18 @@
         </section>
         <section id="categorias-produtos">
             <ul class="categorias-seletor">
-                <li class="seletor-inicio" onclick="filtrarCateg(0, this)">Inicio</li>
+                <li class="seletor-inicio" onclick="filtrarCateg(1, 0, this)">Inicio</li>
                 <li class="seletor">
                     <p>PCs e Notebooks
                     <img src="/assets/images/icons/seta-icon.png" alt="PCs e Notebooks">
                     </p>
-                    <ul class="cat-dropdown" ">
-                        <li onclick="filtrarCateg('Acer', this)">Acer</li>
-                        <li onclick="filtrarCateg('Lenovo', this)">Lenovo</li>
-                        <li onclick="filtrarCateg('Asus', this)">Asus</li>
-                        <li onclick="filtrarCateg('Dell', this)">Dell</li>
-                        <li onclick="filtrarCateg('Outros', this)">Outros</li>
-                        <li class="ultimo-elem" onclick="filtrarCateg('Apple', this)">Apple</li>
+                    <ul class="cat-dropdown">
+                        <li onclick="filtrarCateg(1,'Acer', this)">Acer</li>
+                        <li onclick="filtrarCateg(1,'Lenovo', this)">Lenovo</li>
+                        <li onclick="filtrarCateg(1,'Asus', this)">Asus</li>
+                        <li onclick="filtrarCateg(1,'Dell', this)">Dell</li>
+                        <li onclick="filtrarCateg(1,'Outros', this)">Outros</li>
+                        <li class="ultimo-elem" onclick="filtrarCateg(1,'Apple', this)">Apple</li>
                         
                     </ul>
                 </li>
@@ -43,11 +43,11 @@
 
                 </p>
                 <ul class="cat-dropdown">
-                    <li onclick="filtrarCateg('Xiaomi', this)">Xiaomi</li>
-                    <li onclick="filtrarCateg('Samsung', this)">Samsung</li>
-                    <li onclick="filtrarCateg('Motorola', this)">Motorola</li>
-                    <li onclick="filtrarCateg('Outros', this)">Outros</li>
-                    <li class="ultimo-elem" onclick="filtrarCateg('Apple', this)">Apple</li>                    
+                    <li onclick="filtrarCateg(2,'Xiaomi', this)">Xiaomi</li>
+                    <li onclick="filtrarCateg(2,'Samsung', this)">Samsung</li>
+                    <li onclick="filtrarCateg(2,'Motorola', this)">Motorola</li>
+                    <li onclick="filtrarCateg(2,'Outros', this)">Outros</li>
+                    <li class="ultimo-elem" onclick="filtrarCateg(2,'Apple', this)">Apple</li>                    
                 </ul>
                 </li>                
                 <li class="seletor"><p>
@@ -55,11 +55,11 @@
                     <img src="/assets/images/icons/seta-icon.png" alt="TVs e Monitores">
                 </p>
                 <ul class="cat-dropdown">
-                    <li onclick="filtrarCateg('Smart TVs', this)">Smart TVs</li>
-                    <li onclick="filtrarCateg('TVs 4K', this)">TVs 4K</li>
-                    <li onclick="filtrarCateg('Monitores Gamers', this)">Monitores Gamers</li>
-                    <li onclick="filtrarCateg('Monitores Ultra Wide', this)">Monitores Ultra Wide</li>
-                    <li class="ultimo-elem" onclick="filtrarCateg('Outros', this)">Outros</li>                    
+                    <li onclick="filtrarCateg(3,'Smart TVs', this)">Smart TVs</li>
+                    <li onclick="filtrarCateg(3,'TVs 4K', this)">TVs 4K</li>
+                    <li onclick="filtrarCateg(3,'Monitores Gamers', this)">Monitores Gamers</li>
+                    <li onclick="filtrarCateg(3,'Monitores Ultra Wide', this)">Monitores Ultra Wide</li>
+                    <li class="ultimo-elem" onclick="filtrarCateg(3,'Outros', this)">Outros</li>                    
                 </ul>
                 </li>                
                 <li class="seletor"><p>
@@ -67,12 +67,12 @@
                     <img src="/assets/images/icons/seta-icon.png" alt="Periféricos">
                 </p>
                 <ul class="cat-dropdown">
-                    <li onclick="filtrarCateg('Teclado', this)">Teclado</li>
-                    <li onclick="filtrarCateg('Mouse', this)">Mouse</li>
-                    <li onclick="filtrarCateg('Fone de ouvido', this)">Fone de ouvido</li>
-                    <li onclick="filtrarCateg('Webcams', this)">Webcams</li>
-                    <li onclick="filtrarCateg('Microfone', this)">Microfone</li>
-                    <li class="ultimo-elem" onclick="filtrarCateg('Outros', this)">Outros</li>                    
+                    <li onclick="filtrarCateg(4,'Teclado', this)">Teclado</li>
+                    <li onclick="filtrarCateg(4,'Mouse', this)">Mouse</li>
+                    <li onclick="filtrarCateg(4,'Fone de ouvido', this)">Fone de ouvido</li>
+                    <li onclick="filtrarCateg(4,'Webcams', this)">Webcams</li>
+                    <li onclick="filtrarCateg(4,'Microfone', this)">Microfone</li>
+                    <li class="ultimo-elem" onclick="filtrarCateg(4,'Outros', this)">Outros</li>                    
                 </ul>
                 </li>                
                 <li class="seletor"><p>
@@ -80,17 +80,18 @@
                     <img src="/assets/images/icons/seta-icon.png" alt="Hardware">
                 </p>
                 <ul class="cat-dropdown">
-                    <li onclick="filtrarCateg('Processadores', this)">Processadores</li>
-                    <li onclick="filtrarCateg('Memória RAM', this)">Memória RAM</li>
-                    <li onclick="filtrarCateg('Placas de video', this)">Placas de vídeo</li>
-                    <li onclick="filtrarCateg('Placas Mãe', this)">Placas Mãe</li>
-                    <li onclick="filtrarCateg('HD e SSD', this)">HD e SSD</li>
-                    <li class="ultimo-elem" onclick="filtrarCateg('Peças e acessórios', this)">Peças e acessórios</li>                    
+                    <li onclick="filtrarCateg(5,'Processadores', this)">Processadores</li>
+                    <li onclick="filtrarCateg(5,'Memória RAM', this)">Memória RAM</li>
+                    <li onclick="filtrarCateg(5,'Placas de video', this)">Placas de vídeo</li>
+                    <li onclick="filtrarCateg(5,'Placas Mãe', this)">Placas Mãe</li>
+                    <li onclick="filtrarCateg(5,'HD e SSD', this)">HD e SSD</li>
+                    <li class="ultimo-elem" onclick="filtrarCateg(5,'Peças e acessórios', this)">Peças e acessórios</li>                    
                 </ul>
                 </li>                
             </ul>
         </section>
         <section id="container-produtos">
+
         </section>
     
 

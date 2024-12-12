@@ -63,7 +63,7 @@ return valor.toUpperCase().trim();
 
 
 
-let tempoRestante = 10000;
+let tempoRestante = 10 *60;
 const intervalo = setInterval(function() {
 
     let minutos = Math.floor(tempoRestante / 60);
@@ -95,22 +95,30 @@ const intervalo = setInterval(function() {
 
 
 
-  let cont_cat = 0;
-  function filtrarCateg(categoria, elemento) {
+  function filtrarCateg(cat,sub_categoria, elemento) {
+    categor = {
+        1: 'PCs e Notebooks',
+        2: 'Celulares',
+        3: 'TVs e Monitores',
+        4: 'Periféricos',
+        5: 'Hardware'
+    }
     let ativo = document.getElementsByClassName('active-cat');
     let produtos = document.getElementsByClassName('produto');
-    if (categoria == 0) {
+    for (let i = 0; i < ativo.length; i++) {
+        ativo[i].classList.remove('active-cat');
+    }
+    if (sub_categoria == 0) {
         for (let i = 0; i < produtos.length; i++) {
             produtos[i].style.display = 'flex';
         }
     } else {
-        for (let i = 0; i < ativo.length; i++) {
-            ativo[i].classList.remove('active-cat');
-        }
         elemento.classList.add('active-cat');
         for (let i = 0; i < produtos.length; i++) {
+            let sub_cat_sel = produtos[i].querySelector('.sub-categoria-sel').innerText;
             let cat_sel = produtos[i].querySelector('.categoria-sel').innerText;
-            if (cat_sel == categoria) {
+
+            if (cat_sel == categor[cat] && sub_cat_sel == sub_categoria) {
                 produtos[i].style.display = 'flex'; 
             } else {
                 produtos[i].style.display = 'none';

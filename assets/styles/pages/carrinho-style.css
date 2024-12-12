@@ -16,167 +16,172 @@
     --fonte-categorias: 'Rowdies',  'Arial', sans-serif;
     --fonte-categorias-light: 'Rowdies-light', 'Arial', sans-serif;
 */
-    
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    
-        font-family: var(--fonte-texto), sans-serif;
-        font-size: 1.125rem;
-    
-    }
 
-    main{
-        padding-top: 100px;
-        border: 200px;
-        margin: auto
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
- 
-    
-    .numeros_finalizacao_compra {
-        position: absolute;
-        top: 90px; 
-        right: 20px; 
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+    font-family: var(--fonte-texto), sans-serif;
+    font-size: 1.125rem;
 
-    .etapa {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: var(--cor-secundaria);
-        display: flex;
-        color: var(--branco);
-        justify-content: center;
-        align-items: center;
-        margin: 0 5px;
-    }
-    
-    .etapa-concluida{
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: var(--cor-principal);
-        display: flex;
-        color: var(--branco);
-        justify-content: center;
-        align-items: center;
-        margin: 0 5px;
-        position: relative;
-    }
+}
 
-    .etapa-concluida::after{
-        content: ' ';
-        width: 22px;
-        height: 10px;
-        position: absolute;
-        background: var(--cor-principal);
-        right: -21px;
-        border-radius: 15%;
+main {
+    padding-top: 100px;
+    border: 200px;
+    margin: auto
+}
 
-    }
-
-    .linha-concluida{
-        margin: 0 5px;
-        background-color: var(--cor-principal);
-        flex: 1;
-        height: 2px;
-        border: 20px var(--cor-principal);
-        
-    }
-
-    .linha {
-        flex: 6;
-        height: 2px;
-        background-color: var(--cor-secundaria);
-        margin: 0 5px;
-    }
-   
-    
-    .img_carrinho{
-        width: 80px;
-        height: 80px;
-        margin-left: 10px;
-    }
-
-    .carrinho_nome h1{
-        margin: 0;
-        font-size: 24px;
-    }
-    
-    .linha_superior{
-        height: 15px;
-        background-color: var(--cor-principal);
-        border-radius: 3px;
-        margin: 0 5px;
-
-    }
-
-    .imagem_produto{
-        width: 20%;
-        height: 20%;
-        margin-left: 10px;
-        border: 2px solid var(--cor-principal);
-        border-radius: 20%;
-
-    }
-    
-    .detalhes_produto{
+.numeros_finalizacao_compra {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-   
-    }
+}
+
+.etapa {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    color: var(--branco);
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.etapa-concluida {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cor-principal);
+    display: flex;
+    color: var(--branco);
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    position: relative;
+}
+
+.etapa-concluida::after {
+    content: ' ';
+    width: 22px;
+    height: 10px;
+    position: absolute;
+    background: var(--cor-principal);
+    right: -21px;
+    border-radius: 15%;
+
+}
+
+.linha-concluida {
+    margin: 0 5px;
+    background-color: var(--cor-principal);
+    flex: 1;
+    height: 2px;
+    border: 20px var(--cor-principal);
+
+}
+
+.linha {
+    flex: 6;
+    height: 2px;
+    background-color: var(--cor-secundaria);
+    margin: 0 5px;
+}
 
 
-    .img_lixeiro{
-        width: 32px;
-        height: 32px;
-        margin-left: 10px;
-    }
+.img_carrinho {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
 
-    .preco-produto{
-        font-size: 18px;
-        text-align: right;
-        
+.carrinho_nome h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: var(--fonte-categorias-light);
+}
 
-    }
+.linha_superior {
+    height: 15px;
+    background-color: var(--cor-principal);
+    border-radius: 3px;
+    margin: 0 5px;
 
-    .nome-produto{
-        font-size: 18px;
-        text-align: right;
-    }
+}
 
-    .quantidade{
-        text-align: center;
-        
-    }
+.imagem_produto {
+    width: 20%;
+    height: 20%;
+    margin-left: 10px;
+    border: 2px solid var(--cor-secundaria);
+    ;
+}
 
-    .quantidade_bntA{
-        font-size: 30px;
-        width: 30px;
-        border: none;
-        background-color: var(--branco);
-        color: var(--cor-principal);
-    }
+.detalhes_produto {
+    align-items: center;
 
-    .quantidade_bntD{
+}
 
-        width: 30px;
-        border: none;
-        background-color: var(--branco);
-        color: var(--cor-principal);
-    }
-    
-    .remove_bnt{
-        border: none;
-        background-color: var(--branco);
-        text-decoration: 1px underline var(--cinza);
-    }
+.nome-produto{
+    font-family: var(--fonte-categorias);
+}
 
-.linha-inferior{
+.img_lixeiro {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.preco-produto {
+    font-size: 18px;
+    text-align: right;
+    font-family: var(--fonte-categorias);
+}
+
+.nome-produto {
+    font-size: 18px;
+    text-align: right;
+}
+
+.quantidade {
+    text-align: center;
+
+}
+
+.quantidade_bntA {
+    font-size: 30px;
+    width: 30px;
+    border: none;
+    background-color: var(--branco);
+    color: var(--cor-principal);
+    font-family: var(--fonte-titulo);
+    cursor: pointer;
+}
+
+.quantidade_bntD {
+
+    width: 30px;
+    border: none;
+    background-color: var(--branco);
+    color: var(--cor-principal);
+    font-family: var(--fonte-titulo);
+    cursor: pointer;
+}
+
+.remove_bnt {
+    border: none;
+    background-color: var(--branco);
+    text-decoration: 1px underline var(--cinza);
+    font-family: var(--fonte-categorias-light);
+}
+
+.linha-inferior {
     height: 5px;
     background-color: var(--cor-principal);
     border-radius: 2px;
@@ -186,20 +191,24 @@
 .label-cep {
     margin-top: 20px;
     color: var(--cinza);
-    font-size:large;
-    text-align:justify;
+    font-size: large;
+    text-align: justify;
+    font-family: var(--fonte-categorias);
 }
 
-.input-cep{
- width: 30%;
- height: 20%;
- border: 2px solid var(--cor-secundaria);
+.input-cep {
+    width: 30%;
+    height: 20%;
+    border: 2px solid var(--cor-secundaria);
 }
 
-.paragrafo-cep{
+
+
+.paragrafo-cep {
     margin-top: 30px;
     color: var(--cinza);
-    font-size:large;
+    font-size: large;
+    font-family: var(--fonte-categorias);
 
 }
 
@@ -216,22 +225,29 @@
     border-radius: 5px;
 }
 
-.produto_carrinho{
+.btn-finalizarCompra:hover{
+    background-color: var(--cor-secundaria);
+}
+
+.produto_carrinho {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    padding: 20px;
 }
 
 
-.var-butao, .var-remover{
+.butao,
+.remover {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.btn-restaurarProduto{
+
+.btn-restaurarProduto {
     background-color: var(--cor-principal);
     color: var(--branco);
     border: none;
@@ -243,19 +259,26 @@
     border-radius: 5px;
 }
 
-.container-pagamento{
+.container-pagamento {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid var(--cor-principal);
-    font-family: var(--fonte-texto), sans-serif;
-    font-size:large;
-   
+    font-family: var(--fonte-categorias);
+    font-size: large;
+}
+
+.dados-cadastrais {
+    font-family: var(--fonte-categorias);
+}
+
+#nome, #email, #telefone, #cep, #endereco, #cidade, #estado, #pagamento{
+
+    border: 1px solid var(--cor-secundaria);
 
 }
 
-
-.bntfinalizar{
+.bntfinalizar {
     background-color: var(--cor-principal);
     color: var(--branco);
     border: none;
@@ -266,3 +289,31 @@
     font-size: 1rem;
     border-radius: 5px;
 }
+
+.bntfinalizar:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.mensagemFreteContainer {
+    font-family: var(--fonte-titulo);
+}
+
+.btn-adicionarProdutos {
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.frase-informativa {
+    font-family: var(--fonte-categorias);
+    font-size: 1rem;
+    color: var(--cinza);
+    justify-content: center;
+}
+

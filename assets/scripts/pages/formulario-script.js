@@ -58,17 +58,20 @@ document.getElementById('categoria').addEventListener('change', function () {
  
 document.getElementById('formulario').addEventListener('submit', function (envioProd) {
     envioProd.preventDefault();
-    var select = document.getElementById('subcategoria');
+    var select = document.getElementById('categoria');
     var option = select.children[select.selectedIndex];
     var texto = option.textContent;
+    select = document.getElementById('subcategoria');
+    option = select.children[select.selectedIndex];
+    var subtexto = option.textContent;
     const produto = {
         titulo: document.getElementById('titulo').value,
         imagem: document.getElementById('imagem').value,
         preco: parseFloat(document.getElementById('preco').value),
         preco_antigo: parseFloat(document.getElementById('preco-antigo').value) || null,
         descricao: document.getElementById('descricao').value,
-        categoria: document.getElementById('categoria').value,
-        subcategoria: texto
+        categoria: texto,
+        subcategoria: subtexto
     };
 
     let produtos = JSON.parse(localStorage.getItem('produtos')) || [];

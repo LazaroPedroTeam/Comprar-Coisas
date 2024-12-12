@@ -19,10 +19,10 @@ class Produto{
     exibirProduto() {
         let campo = document.getElementById("container-produtos");
 
-        let ulProduto = document.createElement("ul");
+        let ulProduto = document.createElement("li");
         ulProduto.classList.add("produto");
         ulProduto.innerHTML = `
-            <a href="/assets/pages/produto-page.html">
+            <a href="/assets/pages/product-page.html">
                 <li class="imagem-produto">
                     <img src="${this.imagem}" alt="Imagem do ${this.titulo}">
                 </li>
@@ -37,7 +37,8 @@ class Produto{
                     <div class="descricao-produto" title="${this.descricao}">
                         <p>${this.descricao}</p>
                     </div>
-                    <p class="categoria-sel">${this.sub_categoria}</p>
+                    <p class="categoria-sel">${this.categoria}</p>
+                    <p class="sub-categoria-sel">${this.sub_categoria}</p>
                 </li>
             </a>
         `;

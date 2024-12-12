@@ -13,55 +13,64 @@
 
 <body>
     <header id="header">
-        
+
     </header>
-<div class="todoconteudo">
-    <main>
-        <div class="carrinho_nome">
-            <h1>Carrinho</h1>
-            <img class="img_carrinho" src="/assets/images/icons/carrinho.png" alt="icone do carrinho"  type="image/png">
-        </div>
-        <hr class="linha_superior">
-        <div class="numeros_finalizacao_compra">
-            <div class="etapa-concluida"><p>1</p></div>
-            <div class="linha-concluida"></div>
-            <div class="etapa ">2</div>
-            <div class="linha "></div>
-            <div class="etapa ">3</div>
-            <div class="linha "></div>
-            <div class="etapa ">4</div>
-            <div class="linha "></div>
-        </div>
-        <div class="produto_carrinho" id="produtoCarrinho">
-            <img src="/assets/images/imagens-dos-produtos/notebook-generico.png" alt="notebook" class="imagem_produto">
+    <div class="todoconteudo">
+        <main>
+            <div class="carrinho_nome">
+                <h1>Carrinho</h1>
+                <img class="img_carrinho" src="/assets/images/icons/carrinho.png" alt="icone do carrinho"
+                    type="image/png">
+            </div>
 
-            <h2 class="nome-produto">Apple notebook</h2>
-    
+            <div class="linha_superior"></div> 
+
+            <div class="numeros_finalizacao_compra">
+                <div class="etapa-concluida">
+                    <p>1</p>
+                </div>
+                <div class="linha-concluida"></div>
+                <div class="etapa ">2</div>
+                <div class="linha "></div>
+                <div class="etapa ">3</div>
+                <div class="linha "></div>
+                <div class="etapa ">4</div>
+                <div class="linha "></div>
+            </div>
+
+            <div class="produto_carrinho" id="produtoCarrinho">
+                <img src="/assets/images/imagens-dos-produtos/notebook-generico.png" alt="notebook"
+                    class="imagem_produto">
+
+                <h2 class="nome-produto">Apple notebook</h2>
+
                 <div class="quantidade">
-                    <div class="var-butao">
-                    <button type="button" class="quantidade_bntA" id="btnDiminuir">-</button>
-                    <span id="quantidadeProduto">1</span>
-                    <button type="button" class="quantidade_bntD" id="btnAumentar">+</button>
+                    <div class="butao">
+                        <button type="button" class="quantidade_bntA" id="btnDiminuir">-</button>
+                        <span id="quantidadeProduto">1</span>
+                        <button type="button" class="quantidade_bntD" id="btnAumentar">+</button>
+                    </div>
+
+                    <div class="remover">
+                        <img src="/assets/images/icons/Lixeiro.png" alt="lixeiro" class="img_lixeiro">
+                        <button type="button" class="remove_bnt" id="btnRemover">Remover</button>
+                    </div>
                 </div>
 
-                    <div class="var-remover">
-                    <button type="button" class="remove_bnt" id="btnRemover">Remover</button>
-                    <img src="/assets/images/icons/Lixeiro.png" alt="lixeiro" class="img_lixeiro">
-                </div>
-                </div>
+                <p class="preco-produto" id="precoProduto">R$5.400,99</p>
+            </div>
+            
+            <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto Anterior</button>
 
-            <p class="preco-produto" id="precoProduto" >R$5.400,99</p>
-        </div>
-        <button class="btn-restaurarProduto" id="restaurarProduto" style="display: none;">Restaurar Produto</button>
-       
-        <hr class="linha-inferior">
-       
-        <p class="paragrafo-cep" >Preencher o campo CEP para calcular o valor do frete.</p>
-        <label class="label-cep" for="cep">Informe seu CEP</label>
-        <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8" oninput="calcularFrete()">
-        <div id="mensagemFreteContainer"></div>
-    </main>
-</div>
+            <hr class="linha-inferior">
+
+            <p class="paragrafo-cep">Preencher o campo CEP para calcular o valor do frete.</p>
+            <label class="label-cep" for="cep">Informe seu CEP</label>
+            <input class="input-cep" type="text" id="cep" placeholder="EX: 01001000" maxlength="8"
+                oninput="calcularFrete()">
+            <div id="mensagemFreteContainer"></div>
+        </main>
+    </div>
     <footer>
         <button class="btn-finalizarCompra" id="finalizarCompra">Finalizar compra</button>
         <div id="container-pagamento"></div>
@@ -69,4 +78,5 @@
 </body>
 <script src="/assets/scripts/components/header.js"></script>
 <script src="/assets/scripts/pages/carrinho-script.js"></script>
+
 </html>
