@@ -173,6 +173,7 @@ section{
     color: var(--branco) !important;
     border-color: var(--branco) !important;
 }
+
 .sub-categoria-sel, .categoria-sel{
     display: none;
 }
@@ -182,12 +183,6 @@ section{
 @media (max-width : 1200px){
     #container-produtos{
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-}
-@media (max-width : 800px){
-    #container-produtos{
-        grid-template-columns: 1fr 1fr;
     }
     
 }

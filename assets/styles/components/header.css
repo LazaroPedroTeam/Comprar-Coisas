@@ -22,7 +22,7 @@
     width: 30vw;
     border-radius: 20px;
     outline: none; 
-    padding: 2% 4%;
+    padding: 0.7rem 1rem;
     padding-right: 50px;
     border: none;
     color: var(--cinza);
@@ -145,12 +145,10 @@ a{
     html{
         font-size: 14px;
     }
-    #header{
-        height: 12vh;
-    }
+
     
 }
-@media (max-width : 600px){
+@media (max-width : 800px){
     html{
         font-size: 12px;
     }
