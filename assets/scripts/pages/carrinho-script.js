@@ -20,6 +20,16 @@ function atualizarQuantidade() {
     quantidadeProdutoElem.textContent = quantidade;
 }
 
+function atualizarPreco() {
+    if (cepInput.value.length === 8) {
+        precoComFrete = (precoBase * quantidade) + frete;
+    } else {
+        precoComFrete = precoBase * quantidade;
+    }
+    precoProdutoElem.textContent = `R$${precoComFrete.toFixed(2).replace('.', ',')}`;
+}
+
+
 btnAumentar.onclick = function () {
     quantidade += 1;
     atualizarQuantidade();
