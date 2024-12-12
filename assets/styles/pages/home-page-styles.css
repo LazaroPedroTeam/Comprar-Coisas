@@ -159,7 +159,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-.promocao, .promocao span, #promocao-banner{
+#promocao, #promocao span, #promocao-banner{
     font-family: var(--fonte-categorias);
     text-transform: uppercase;
     color: var(--branco);
@@ -180,6 +180,12 @@ section{
 @media (max-width : 1200px){
     #container-produtos{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+@media (max-width : 800px){
+    #container-produtos{
+        grid-template-columns: 1fr 1fr;
     }
     
 }
